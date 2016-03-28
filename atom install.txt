@@ -1,0 +1,8 @@
+#atom¼³Ä¡
+
+	1. emmet
+	2. open in browsers
+	3. autocomplete-paths
+	4. markdown preview plus
+	5. indent-guide-improved
+	6. color-picker
