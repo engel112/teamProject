@@ -1,0 +1,10 @@
+Brackets install plugin
+
+1. emmet (단축키)
+2. tabs custom working (에디트 창설정)
+3. markdown preview (markdown뷰어)
+4. CSS - Color marker (코드색상확인)
+5. indent guide (들여쓰기 확인)
+6. brackets beautify (코드 이쁘게 배치)
+7. brackets-W3CValidation (표준화 체크)
+8. interactive linter (오류확인)
