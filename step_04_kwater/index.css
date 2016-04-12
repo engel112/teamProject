@@ -1,0 +1,38 @@
+/* index.css */
+
+#wrap {width: 100%; height: auto;}
+#wrap>div {margin: 0 auto;}
+/*--------------- #header---------------------------------------------------------*/
+    #wrap>#header{width: 948px; height: 74px; background-color: #add; padding: 16px 6px 0;}        
+        h1{width: 98px;height: 60px; background-color: #fca; float: left;}
+        h1>a{width: 100%; height: 100%; background-color: #00f; display: block;
+            background-image: url(./images/logo.jpg); background-repeat: no-repeat; background-position: center center;}
+        h1>a>span{width: 0; height: 0; display: block; overflow: hidden;}
+        #sitemap{width: 226px; height: 15px; background-color: #0da; float: right; margin-bottom: 4px;}
+            #sitemap>ul{width: 100%; height: 100%;}
+            #sitemap>ul>li{height: 100%; float: left;}
+                #sitemap>ul>.site_01{width: 38px;}
+                #sitemap>ul>.site_02{width: 48px;}
+                #sitemap>ul>.site_03{width: 56px;}
+                #sitemap>ul>.site_04{width: 72px;}
+                    #sitemap>ul>.site_01>a{background-image: url(./images/sitemap_1.jpg);}
+                    #sitemap>ul>.site_02>a{background-image: url(./images/sitemap_2.jpg);}
+                    #sitemap>ul>.site_03>a{background-image: url(./images/sitemap_3.jpg);}
+                    #sitemap>ul>.site_04>a{background-image: url(./images/sitemap_4.jpg);}
+                #sitemap>ul>li>a{background-position: center;}
+        #gnb{width: 790px; height: 34px; background-color: #a0d; float: right;}
+
+/*--------------- #banner---------------------------------------------------------*/
+    #wrap>#banner {width: 100%; height: 500px; background-color: #f9a;}    
+
+/*--------------- #article---------------------------------------------------------*/
+    #article {width: 948px; height: 808px; background-color: #aac; padding:0 6px;}
+        #lnb{width: 100%; height: 100px; border-bottom: 1px solid #eee; margin-bottom: 28px; background-color: #aaa;}
+        #content{width: 100%; height: 637px; background-color: #ada;}
+
+/*--------------- #footer---------------------------------------------------------*/
+    #wrap>#footer {width: 100%; height: 120px; border-top: 1px solid #d8d8d8; background-color: #fa0;}
+    #footerBox{width:948px; padding:35px 6px 30px; height: 55px; background-color: #caa; margin: 0 auto;}
+        #footerBox>h2{width: 92px; height: 52px; background-color: #af5; margin-right: 50px; float: left;}
+        #add{width: 515px; height: 52px; background-color: #0ad; float: left;}
+        #mark{width: 168px; height: 90px; background-color: #888; margin-top: -10px; float: right;}
