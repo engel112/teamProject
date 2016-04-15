@@ -1,0 +1,9 @@
+/* index.css */
+
+#wrap {width: 100%; height: auto; background-color: #aaa;}
+#wrap>div{margin: 0 auto;}
+
+#header {width: 978px; height: 100px; background-color:#7ef;}
+    #banner {width: 100%; height: 500px; background-color:#caa;}
+    #article {width: 978px; height: 800px; background-color:#cd0;}
+    #footer {width: 978px; height: 200px; background-color:#7af;}
