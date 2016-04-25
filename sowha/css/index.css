@@ -19,7 +19,7 @@ header {height: 73px; padding: 10px 0 17px;}
 header>h1 {width: 140px; height: 40px; float:left; margin-top: 33px;}
 h1>a{background-image: url(../images/logo.png);}
     #sitemap {width: 332px; height:16px; float: right; margin-bottom: 33px;}
-        #sitemap>li{width: 100%; height: 100%; background-color: #aff; float: left;}
+        #sitemap>li{width: 100%; height: 100%; float: left;}
         #sitemap>.sitemap01 {width: 36px; height: 100%;}
         #sitemap>.sitemap02 {width: 48px; height: 100%;}
         #sitemap>.sitemap03 {width: 44px; height: 100%;}
@@ -35,7 +35,7 @@ h1>a{background-image: url(../images/logo.png);}
             #sitemap>.sitemap06>a {background-image: url(../images/header/sitemap.png);}
             #sitemap>.sitemap_bar>span {width: 0; height: 0; overflow: hidden; display: block;}
     #gnb {width: 520px; height: 24px; float: right;}
-        #gnb>li{height: 100%; background-color: #fdf; float: left;}
+        #gnb>li{height: 100%; float: left;}
             #gnb>.gnb01 {width: 108px; margin-right: 29px;}
             #gnb>.gnb02 {width: 78px; margin-right: 35px;}
             #gnb>.gnb03 {width: 70px; margin-right: 27px;}
@@ -48,9 +48,10 @@ h1>a{background-image: url(../images/logo.png);}
                 #gnb>.gnb05>a {background-image: url(../images/header/gnb05.png);}
 
 
-/* ------------------ banner 임시 ------------------------ */
-#wrap>banner {width: 100%; height: 252px; background-color: #222; display: block; border-top:6px solid #0059cf;}
-#wrap>banner>#www {width: 960px; height: 252px; background-image: url(../images/banner/banner.png);  background-position: bottom;margin: 0 auto;}
+/* ------------------ banner ------------------------ */
+#wrap>banner {width: 100%; height: 252px; position: relative; border-top:6px solid #0059cf; display: block; background-repeat: no-repeat; background-color: #333;}
+    #bnWrap {width: 960px; height: 100%; position: absolute; margin-left: calc(50% - 480px); background-image: url(../images/banner/banner.png); background-position: bottom center;}
+    #bnSearch{width: 220px; height: 100%; float: right; background-image: url(../images/banner/search_bg.png);}
 
 
 /* ------------------ article ------------------------ */
