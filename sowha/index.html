@@ -17,16 +17,21 @@
     <script></script>
 </head>
 <body>
-<div id="wrap">
+<div id="wrap" class="me_link">
     <header>
-    <h1><a href="#"><span>logo</span></a></h1>
+    <h1 class="me_link"><a href="#"><span>도서출판 소화</span></a></h1>
     <h3>사이트맵</h3>
     <ul id="sitemap">
         <li class="sitemap01"><a href="#"><span>로그인</span></a></li>
+        <li class="sitemap_bar"><span>바</span></li>
         <li class="sitemap02"><a href="#"><span>sitemap02</span></a></li>
+        <li class="sitemap_bar"><span>바</span></li>
         <li class="sitemap03"><a href="#"><span>sitemap03</span></a></li>
+        <li class="sitemap_bar"><span>바</span></li>
         <li class="sitemap04"><a href="#"><span>sitemap04</span></a></li>
+        <li class="sitemap_bar"><span>바</span></li>
         <li class="sitemap05"><a href="#"><span>sitemap05</span></a></li>
+        <li class="sitemap_bar"><span>바</span></li>
         <li class="sitemap06"><a href="#"><span>sitemap06</span></a></li>
     </ul>
     <h3>메뉴</h3>
@@ -40,83 +45,107 @@
     
     </header>
     
-    <banner>banner</banner>
+    <banner>
+    <div id="www"></div>
+    </banner>
     
     <article>
     <h2>본문</h2>
-    <div id="art_box01">
-        <div id="art_box01_wrap">
+    <div id="art_box01" class="me_link">
         <ul id="art_box01_t">
-            <li class="box01_tltle">새로나온책</li>
-            <li class="box01_btn_l">버튼</li>
-            <li class="box01_btn_r">버튼</li>
+            <li class="box01_tltle"><span>스테디셀러</span></li>
+            <li class="box01_btn_l"><a href="#"><span>왼쪽으로</span></a></li>
+            <li class="box01_btn_r"><a href="#"><span>오른쪽으로</span></a></li>
         </ul>
-        <ul id="art_box01_b">
-            <li class="box01_01"><a href="#"><span>book01</span></a></li>
-            <li class="box01_02"><a href="#"><span>book02</span></a></li>
-            <li class="box01_03"><a href="#"><span>book03</span></a></li>
-            <li class="box01_04"><a href="#"><span>book04</span></a></li>
-            <li class="box01_05"><a href="#"><span>book05</span></a></li>
-            <li class="box01_06"><a href="#"><span>book06</span></a></li>
-            <li class="box01_07"><a href="#"><span>book07</span></a></li>
-            <li class="box01_08"><a href="#"><span>book08</span></a></li>
-        </ul>
+        <div id="art_box01_content">
+            <ul id="art_box_list">
+                <li class="box01_01"><a href="#"><span>book01</span></a></li>
+                <li class="box01_02"><a href="#"><span>book02</span></a></li>
+                <li class="box01_03"><a href="#"><span>book03</span></a></li>
+            </ul>
+            <img class="art01_bar" src="./images/article/artbox01_bar.png" alt="bar" />
+            <ul id="art_box_list_t">
+                <li class="box01_t_01"><a href="#"><span>book01</span></a></li>
+                <li class="box01_t_02"><a href="#"><span>book02</span></a></li>
+                <li class="box01_t_03"><a href="#"><span>book03</span></a></li>
+            </ul>
         </div>
     </div><!--// #art_box01-->
+    
     <div id="art_box02">
-       <div id="art_box02_wrap">
-        <ul id="art_box02_t">
-            <li class="box02_tltle">스테디셀러</li>
-            <li class="box02_btn_l">버튼</li>
-            <li class="box02_btn_r">버튼</li>
+        <ul id="art_box02_t" class="me_link">
+            <li class="box02_tltle"><span>새로 나온 책</span></li>
+            <li class="box02_btn_l"><a href="#"><span>왼쪽으로</span></a></li>
+            <li class="box02_btn_r"><a href="#"><span>오른쪽으로</span></a></li>
         </ul>
-        <ul id="art_box02_b">
-            <li class="box02_title">책제목 저자</li>
-            <li class="box02_txt">설명</li>
-            <li class="box02_book">책이미지</li>
+        <ul id="art_box02_content">
+            <li class="box02_title"><a href="#"><span>책제목</span></a></li>
+            <li class="box02_writer"><a href="#"><span>저자</span></a></li>
+            <li class="box02_date"><a href="#"><span>발행일 가격</span></a></li>
+            <li class="box02_txt"><a href="#"><span>책설명</span></a></li>
         </ul>
-        </div>
+        <span class="box02_book"><a href="#"><span>이미지</span></a></span>
     </div><!--// #art_box02-->
     
        <div id="art_box03">
-       <div id="art_box03_wrap">
-        <ul id="art_box03_t">           
-            <li class="box03_tltle">편집자 추천도서</li>
-            <li class="box03_more">더보기</li>
-        </ul>
-        <ul id="art_box_03_t">
-            <li class="box03_top_book">책이미지</li>
-            <li class="box03_top_title">책제목 저자</li>
-            <li class="box03_top_txt">설명</li>
-        </ul>
-        <ul id="art_box_03_b">
-            <li class="box03_bottom_book">책이미지</li>
-            <li class="box03_bottom_title">책제목 저자</li>
-            <li class="box03_bottom_txt">설명</li>            
-        </ul>
+            <ul id="art_box03_t">           
+                <li class="box03_tltle"><span>편집자 추천도서</span></li>
+                <li class="box03_more"><a href="#"><span>더보기</span></a></li>
+            </ul>
+           <div id="art_box03_content">
+            <ul id="art_box_03_top">
+                <li class="box03_top_book"><a href="#"><span>책이미지</span></a></li>
+                <li class="box03_top_title"><a href="#"><span>책제목</span></a></li>
+                <li class="box03_top_writer"><a href="#"><span>저자</span></a></li>
+                <li class="box03_top_txt"><a href="#"><span>설명</span></a></li>
+            </ul>
+            <ul id="art_box_03_bottom">
+                <li class="box03_bottom_book"><a href="#"><span>책이미지</span></a></li>
+                <li class="box03_bottom_title"><a href="#"><span>책제목</span></a></li>
+                <li class="box03_bottom_writer"><a href="#"><span>저자</span></a></li>
+                <li class="box03_bottom_txt"><a href="#"><span>설명</span></a></li>
+            </ul>
         </div>
     </div><!--// #art_box03-->
+    
     <div id="art_box04">
-       <div id="art_box04_wrap">
         <ul id="art_box04_t">
-            <li class="art_box04_tltle">우수 학술 도서</li>
-            <li class="art_box04_more">더보기</li>
+            <li class="box04_tltle"><span>우수 학술 도서</span></li>
+            <li class="box04_more"><a href="#"><span>더보기</span></a></li>
         </ul>
-        <ul id="art_box_04_t">
-            <li class="box04_top_book">책이미지</li>
-            <li class="box04_top_title">책제목 저자</li>
-            <li class="box04_top_txt">설명</li>
+       <div id="art_box04_content">
+        <ul id="art_box_04_top">
+            <li class="box04_top_book"><a href="#"><span>책이미지</span></a></li>
+            <li class="box04_top_title"><a href="#"><span>책제목</span></a></li>
+            <li class="box04_top_writer"><a href="#"><span>저자</span></a></li>
+            <li class="box04_top_txt"><a href="#"><span>설명</span></a></li>
         </ul>
-        <ul id="art_box_04_b">
-            <li class="box04_bottom_book">책이미지</li>
-            <li class="box04_bottom_title">책제목 저자</li>
-            <li class="box04_bottom_txt">설명</li>            
+        <ul id="art_box_04_bottom">
+            <li class="box04_bottom_book"><a href="#"><span>책이미지</span></a></li>
+            <li class="box04_bottom_title"><a href="#"><span>책제목</span></a></li>
+            <li class="box04_bottom_writer"><a href="#"><span>저자</span></a></li>
+            <li class="box04_bottom_txt"><a href="#"><span>설명</span></a></li>           
         </ul>
         </div>
     </div><!--// #art_box04-->
     </article>
     
-    <footer>footer</footer>
+    <footer>
+       <div id="ft_top">
+            <ul id="ft_menu" class="me_link">
+                <li class="ft_personal"><a href="#"><span>개인정보취급방침</span></a></li>
+                <li class="ft_map"><a href="#"><span>오시는길</span></a></li>
+            </ul>
+        </div>
+        <div id="ft_btm">
+           <h3>회사주소</h3>
+            <div class="ftlogo"><span>흑백로고</span></div>
+           <ul id="ft_add">
+               <li class="add"><span>주소</span></li>
+               <li class="copy"><span>저작권</span></li>
+           </ul>
+        </div><!--// #ft_btm-->
+    </footer>
 </div><!--// #wrap-->
 </body>
 </html>
