@@ -7,7 +7,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="#" />
     <link rel="apple-touch-icon" href="#" />
     <link rel="stylesheet" href="./css/lib/reset.css" />    
-       <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/index.css" />
         <!--[if lte IE 9]>        
 <script src="./js/dist/html5shiv.min.js"></script>
 <script src="./js/dist/ie9.min.js"></script>
@@ -20,16 +20,63 @@
     <title>Document</title>
     <style></style>
     <script>
-        $(document).ready(function(){});
+        $(document).ready(function(){
+// $() : css에서의 선택자를 표현한 것!! () 내부에 css 선택자와 동일하게 작성 (일부 예외)
+            $(".index_btn>a").on("click", function(e){
+                e.preventDefault();
+            })
+        });
+        
     </script>
 </head>
 <body>
     <div id="container">
         <div id="xidoHeadWrap">
-            <header id="xidoHead"></header>
+            <header id="xidoHead">
+                <h1 id="headH1"></h1>
+                <div class="nar"></div>
+                <div class="site_map"></div>
+                <nav id="gnb"></nav>
+            </header>
+            <div id="xidoHeadSide"><!--side design--></div>
         </div><!--// #xidoHeadWrap-->
-        <section id="indexBanner"></section>
-        <article id="indexContent"></article>
+        
+        <section id="indexBanner">
+         <h2>xido banner</h2>
+          <div class="index_btn index_btn_1">
+           <a href role="button"><span>왼쪽 버튼</span></a>
+          </div>
+          <div class="index_btn index_btn_2">
+           <a href role="button"><span>오른쪽 버튼</span></a>
+          </div>
+           <ol>
+               <li></li>
+               <li></li>
+               <li></li>
+           </ol>
+            <ul>
+                <li class="banner_1">banner_1</li>
+                <li class="banner_2">banner_2</li>
+                <li class="banner_3">banner_3</li>
+            </ul>
+        </section>
+        
+        <article id="indexContent">
+            <h2>xido content</h2>
+<!--index Content Head (inConHead) -->
+            <header class="in_con_head">
+                <h1>forum</h1>
+                <div class="line"><!-- 구분선 --></div>
+                <div class="more"><a href="#"><span>더보기</span></a></div>
+            </header>
+<!--index Content Narration (inConNar)-->
+            <section class="in_con_nar">
+               <h2>본문영역 포럼 주 내용</h2>
+                <article class="in_con_nav_box"></article>
+                <article class="in_con_nar_box"></article>
+            </section>
+        </article>
+        
         <div id="xidoFootWrap">
             <footer id="xidoFoot"></footer>
         </div><!--// #xidoFootWrap-->
