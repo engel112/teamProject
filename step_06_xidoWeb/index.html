@@ -7,6 +7,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="#" />
     <link rel="apple-touch-icon" href="#" />
     <link rel="stylesheet" href="./css/lib/reset.css" />    
+    <link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css" />
     <link rel="stylesheet" href="./css/index.css" />
         <!--[if lte IE 9]>        
 <script src="./js/dist/html5shiv.min.js"></script>
@@ -33,10 +34,34 @@
     <div id="container">
         <div id="xidoHeadWrap">
             <header id="xidoHead">
-                <h1 id="headH1"></h1>
+                <h1 id="headH1" class="me_link"><a href="index.html" title="xido Design education"><span>xido Design education</span></a></h1>
                 <div class="nar"></div>
-                <div class="site_map"></div>
-                <nav id="gnb"></nav>
+                <div class="site_map">
+                    <ul class="site_map_list">
+                        <li class="site_map01"><a href="#">Log In</a></li>
+                        <li class="site_map02"><a href="#">Join</a></li>
+                        <li class="site_map03 me_last"><a href="#">Q&amp;A</a></li>
+                    </ul>
+                    <form id="search" action="#" method="get"><!-- search -->
+                        <fieldset>
+                            <legend>웹검색</legend>
+                            <label for="search_txt" class="me_hidden">시도웹페이지에서 필요한 항목을 검색하세요.</label>
+                            <input type="search" name="search_txt" id="search_txt" />
+                            <label for="search_btn" class="me_hidden">검색</label>
+                            <button type="button" class="fa fa-search" aria-hidden="true"><span class="me_hidden">검색</span></button>
+                        </fieldset><!-- search 끝-->
+                    </form>
+                </div>
+                <nav id="gnb" class="me_link">
+                    <ul id="gnb_bar">
+                        <li class="gnb01"><a href="#"><span>gnb01</span></a></li>
+                        <li class="gnb02"><a href="#"><span>gnb02</span></a></li>
+                        <li class="gnb03"><a href="#"><span>gnb03</span></a></li>
+                        <li class="gnb04"><a href="#"><span>gnb04</span></a></li>
+                        <li class="gnb05"><a href="#"><span>gnb05</span></a></li>
+                        <li class="gnb06"><a href="#"><span>gnb06</span></a></li>
+                    </ul>
+                </nav>
             </header>
             <div id="xidoHeadSide"><!--side design--></div>
         </div><!--// #xidoHeadWrap-->
@@ -78,7 +103,26 @@
         </article>
         
         <div id="xidoFootWrap">
-            <footer id="xidoFoot"></footer>
+            <footer id="xidoFoot">
+                <h2 id="footerLogo"><span class="me_hidden">logo</span></h2>
+                <div id="footerNav">
+                    <ul class="footer_nav"></ul>
+                    <ul class="footer_add"></ul>
+                    <ul class="footer_copy"></ul>
+                </div>
+                <div id="footerRight">
+                    <ol class="family_site">
+                        <li class="site01">site01</li>
+                        <li class="site02">site02</li>
+                    </ol>
+                    <span>designed by Ido.</span>
+                    <ol class="icon">
+                        <li class="icon01"></li>
+                        <li class="icon02"></li>
+                        <li class="icon03"></li>
+                    </ol>
+                </div>
+            </footer>
         </div><!--// #xidoFootWrap-->
     </div><!--// #container-->
 </body>

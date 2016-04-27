@@ -1,0 +1,34 @@
+#container {width: 100%; height: auto; background-color: #aaa; padding-top: 60px;}
+
+/* --------------------- #xidoHeadWrap ----------------------------- */
+
+
+#xidoHeadWrap{width: 100%; height: 60px; background-color: #f06; position: fixed; z-index: 500; top: 0; left: 0;}
+    #xidoHead{width: 960px; height: 100%; margin: 0 auto; background-color: inherit; position: relative;}
+        #headH1{width: 150px; height: 100%; background-color: #595959; float: left;}
+        #headH1>a{width: 126px; height: 40px; padding: 10px 12px; display: block; background-image: url(../img/all/header/logo.png); background-position: center; background-repeat: no-repeat;}
+        .nar{width: 300px; height: 40px; margin: 10px 0 0 20px; float: left; background-image: url(../img/all/header/nar.png); background-position: bottom; background-repeat: no-repeat;}
+        .site_map{width: 146px; height: 45px; margin: 8px 40px 0 0; float: right;}
+        .site_map>ul{float: right;}
+            .site_map>.site_map_list{width: 100%; height: 20px; margin-bottom: 4px;}
+            .site_map>.site_map_list>li{height: 100%; display: inline-block; margin-right: 6px;}
+            .site_map>.site_map_list>li>a{line-height: 20px; color: #fff; font: bold italic 1.16667rem / 1.25 "myriad pro"; letter-spacing: -0.0625rem; word-spacing: -0.2rem;}
+        /*------------------------ search --------------------*/
+            .site_map>form{width: 100%; height: 20px;}
+            .site_map>form>fieldset{width: 100%; height: 100%;}
+                    .site_map>form>fieldset>input {width: 126px; height: 20px; float: left; text-indent: .3125rem;}
+                    .site_map>form>fieldset>button {width: 20px; height: 20px; float: left; cursor: pointer; color: #fff; background-color: #595959; font-size: 1rem;}
+
+/*------------------------ gnb --------------------*/
+        #gnb{width: 754px; height: 20px; border-bottom: 1px solid #595959; background-color: #fff; position: absolute; top: 60px; right: 10px; padding: 10px 26px 0 20px;}
+        #gnb>#gnb_bar{width: 100%; height: 100%;}
+        #gnb>#gnb_bar>li{width: calc(100% / 6); height: 100%; float: left; background-image: url(../img/all/nav/nav.png); background-repeat: no-repeat;}
+            .gnb01>a{background-position: ; margin-right: px;}
+            .gnb02>a{background-position: ; margin-right: px;}
+            .gnb03>a{background-position: ; margin-right: px;}
+            .gnb04>a{background-position: ; margin-right: px;}
+            .gnb05>a{background-position: ; margin-right: px;}
+            .gnb06>a{background-position: ;}
+
+
+    #xidoHeadSide{width: 100%; height: 100%; background-color: #595959; position: absolute; z-index: -100; top: 0; left: -50%;}

@@ -1,0 +1,17 @@
+/* --------------------- #xidoFootWrap ----------------------------- */
+#xidoFootWrap{width: 100%; height: 120px; background-color: #595959;}
+#xidoFoot{width: 860px; height: calc(100% - 20px); margin: 0 auto; background-color: inherit; padding: 0 70px 20px 30px;}
+    #xidoFoot>#footerLogo {width: 82px; height: 36px; margin: 33px 88px 0 0; background-image: url(../img/all/footer/h2_logo.png); float: left; background-repeat: no-repeat; background-position: center;}
+    #xidoFoot>#footerNav {width: 430px; height: calc(100% - 24px); margin: 24px 126px 0 0; float: left; background-color: #9ad;}
+        #xidoFoot>#footerNav>li {width: 100%;}
+            .footer_nav {}
+            .footer_add {}
+            .footer_copy {}
+    #xidoFoot>#footerRight {width: 134px; height: 100px; float: right; background-color: #d0a;}
+        #footerRight>ol{width: 100%; background-color: #aaa; float: right;}
+        #footerRight>.family_site{width: 100px; margin-bottom: 4px; float: right;}
+            #footerRight>.family_site>li{}
+        #footerRight>span{width: 80px; margin-bottom: 28px;}
+        #footerRight>.icon{width: 134px; height: 40px; float: right; background-color: #8ad;}
+            #footerRight>.icon>li{}
+

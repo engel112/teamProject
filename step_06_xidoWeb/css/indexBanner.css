@@ -1,0 +1,28 @@
+/* --------------------- #indexBanner ----------------------------- */
+
+    #indexBanner{width: 960px; height: 430px; margin: 0 auto; overflow: hidden; position: relative;}
+    /* banner_btn    */
+    .index_btn{width: 60px; height: 82px; position: absolute; top: 50%; margin-top:-40px;}
+    .index_btn>a{width: 100%; height: 100%; display: block;}
+    .index_btn_1{background-color: #adadad; left: 10px;}
+    .index_btn_2{background-color: #98a; right: 10px;}
+    /*indicator*/
+    #indexBanner>ol{width: 46px; height: 12px; position: absolute; right:100px; bottom: 20px; z-index: 20;}
+    #indexBanner>ol>li{width: 12px; height: 12px; float: left; margin-right: 5px; background-color: #f06; cursor: pointer; border-radius: 50%;}
+    #indexBanner>ol>li:last-child{margin-right: 0;}
+
+    /* banner    */
+    #indexBanner>ul{width: 300%; height: 100%; margin-left:-100%;}
+        #indexBanner>ul>li{width: calc(100% / 3); height: 100%; float: left;
+                        /*transition: margin-left 2s ease-in;*/
+                        transition-property: all;
+                        transition-timing-function: cubic-bezier(.15,.36,.45,.95);
+                        transition-duration: 2s;
+                        transition-delay: 0.2s;}
+            #indexBanner>ul>.banner_1{background-color:#afc;}
+            #indexBanner>ul>.banner_2{background-color:#caf;}
+            #indexBanner>ul>.banner_3{background-color:#d2c;}
+
+/*test*/
+.index_btn_1:hover ~ ul>li:first-child {margin-left: calc(100% / 3);}
+.index_btn_2:hover ~ ul>li:first-child {margin-left: calc(-100% / 3);}
