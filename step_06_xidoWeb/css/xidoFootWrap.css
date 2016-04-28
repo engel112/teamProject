@@ -1,17 +1,32 @@
 /* --------------------- #xidoFootWrap ----------------------------- */
-#xidoFootWrap{width: 100%; height: 120px; background-color: #595959;}
+#xidoFootWrap{width: 100%; height: 120px; background-color: #595959; font-size: 0.8rem; }
 #xidoFoot{width: 860px; height: calc(100% - 20px); margin: 0 auto; background-color: inherit; padding: 0 70px 20px 30px;}
-    #xidoFoot>#footerLogo {width: 82px; height: 36px; margin: 33px 88px 0 0; background-image: url(../img/all/footer/h2_logo.png); float: left; background-repeat: no-repeat; background-position: center;}
-    #xidoFoot>#footerNav {width: 430px; height: calc(100% - 24px); margin: 24px 126px 0 0; float: left; background-color: #9ad;}
-        #xidoFoot>#footerNav>li {width: 100%;}
-            .footer_nav {}
-            .footer_add {}
-            .footer_copy {}
-    #xidoFoot>#footerRight {width: 134px; height: 100px; float: right; background-color: #d0a;}
-        #footerRight>ol{width: 100%; background-color: #aaa; float: right;}
-        #footerRight>.family_site{width: 100px; margin-bottom: 4px; float: right;}
-            #footerRight>.family_site>li{}
-        #footerRight>span{width: 80px; margin-bottom: 28px;}
-        #footerRight>.icon{width: 134px; height: 40px; float: right; background-color: #8ad;}
-            #footerRight>.icon>li{}
+    #xidoFoot>#footerLogo {width: 82px; height: 36px; margin: 45px 88px 0 0; background-image: url(../img/all/footer/h2_logo.png); float: left; background-repeat: no-repeat; background-position: center;}
+    #xidoFoot>#footerNav {width: 430px; height: calc(100% - 24px); margin: 24px 126px 0 0; float: left;}
+        #xidoFoot>#footerNav>.footer_nav {float: left; width: 100%; margin-bottom: 6px;}
+            #footerNav>.footer_nav>li {height: 14px; float: left; color:#fff;}
+            #footerNav>.footer_nav>li.foot_nav_bar {margin: 0 5px;}
+            #footerNav>.footer_nav>li>a {color: #fff; font:}
+            .footer_add {float: left; height: 30px; margin-bottom: 10px; color:#ddd; line-height: 1.2rem; word-spacing: 2px;}
+            .footer_copy {float: left; color:#ddd;}
+    #xidoFoot>#footerRight {width: 134px; height: 100px; float: right; color:#ddd;}
+
+/*family site*/
+        #footerRight>.family_site{width: 110px; height: 18px; margin-bottom: 4px; float: right; position: relative; cursor:pointer;}
+        #footerRight>.family_site>li{float: left; height: 100%;}
+            #footerRight>.family_site>.family_site_box{width: 90px; background-color:#ddd; color:#f06; font-style: italic; font-size:1rem;}
+            #footerRight>.family_site>.family_site_btn{width: 20px; background-color:#f06; background-image: url(../img/all/footer/family_site_btn.png); background-position: center center; background-repeat: no-repeat;}
+        #footerRight>.family_site_list{width: 110px; background-color: #aaa; position: absolute; margin-top: -40px; margin-left:24px; font-size: 1rem; text-indent: 3px;}
+            #footerRight>.family_site_list>li{height: 20px;}
+
+    #footerRight>span{display: block; width: 90px; height: 10px; margin-bottom: 28px; float: right; color:#ddd;}
+
+        #footerRight>.icon{width: 134px; height: 40px; float: right;}
+            #footerRight>.icon>li{width: 40px; height: 100%; float: left; margin-right: 7px;}
+            #footerRight>.icon>li:last-child{margin: 0;}
+            #footerRight>.icon>li>a{background-image: url(../img/all/footer/link_mark.png);}
+                #footerRight>.icon>li:nth-child(1)>a{background-position: 0;}
+                #footerRight>.icon>li:nth-child(2)>a{background-position: -47px;}
+                #footerRight>.icon>li:nth-child(3)>a{background-position: -94px;}
+            #footerRight>.icon>li>a:hover{background-image: url(../img/all/footer/link_mark_on.png);}
 

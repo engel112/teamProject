@@ -33,7 +33,7 @@
 <body>
     <div id="container">
         <div id="xidoHeadWrap">
-            <header id="xidoHead">
+            <header id="xidoHead" role="banner">
                 <h1 id="headH1" class="me_link"><a href="index.html" title="xido Design education"><span>xido Design education</span></a></h1>
                 <div class="nar"></div>
                 <div class="site_map">
@@ -42,7 +42,7 @@
                         <li class="site_map02"><a href="#">Join</a></li>
                         <li class="site_map03 me_last"><a href="#">Q&amp;A</a></li>
                     </ul>
-                    <form id="search" action="#" method="get"><!-- search -->
+                    <form id="search" action="#" method="get" role="search"><!-- search -->
                         <fieldset>
                             <legend>웹검색</legend>
                             <label for="search_txt" class="me_hidden">시도웹페이지에서 필요한 항목을 검색하세요.</label>
@@ -53,20 +53,20 @@
                     </form>
                 </div>
                 <nav id="gnb" class="me_link">
-                    <ul id="gnb_bar">
-                        <li class="gnb01"><a href="#"><span>gnb01</span></a></li>
-                        <li class="gnb02"><a href="#"><span>gnb02</span></a></li>
-                        <li class="gnb03"><a href="#"><span>gnb03</span></a></li>
-                        <li class="gnb04"><a href="#"><span>gnb04</span></a></li>
-                        <li class="gnb05"><a href="#"><span>gnb05</span></a></li>
-                        <li class="gnb06"><a href="#"><span>gnb06</span></a></li>
+                    <ul id="gnb_bar" role="menu">
+                        <li class="gnb01"><a href="#">about.xido</a></li>
+                        <li class="gnb02"><a href="#">graphic.basic</a></li>
+                        <li class="gnb03"><a href="#">design.guide</a></li>
+                        <li class="gnb04"><a href="#">design.portfolio</a></li>
+                        <li class="gnb05"><a href="#">gallery</a></li>
+                        <li class="gnb06"><a href="#">guest</a></li>
                     </ul>
                 </nav>
             </header>
             <div id="xidoHeadSide"><!--side design--></div>
         </div><!--// #xidoHeadWrap-->
         
-        <section id="indexBanner">
+        <section id="indexBanner" aria-atomi="false">
          <h2>xido banner</h2>
           <div class="index_btn index_btn_1">
            <a href role="button"><span>왼쪽 버튼</span></a>
@@ -86,41 +86,70 @@
             </ul>
         </section>
         
-        <article id="indexContent">
+        <article id="indexContent" role="main">
             <h2>xido content</h2>
 <!--index Content Head (inConHead) -->
             <header class="in_con_head">
                 <h1>forum</h1>
                 <div class="line"><!-- 구분선 --></div>
-                <div class="more"><a href="#"><span>더보기</span></a></div>
+                <div class="more me_link"><a href="#"><i class="fa fa-plus-circle" aria-hidden="true"></i><span>더 보기</span></a></div>
             </header>
 <!--index Content Narration (inConNar)-->
             <section class="in_con_nar">
                <h2>본문영역 포럼 주 내용</h2>
-                <article class="in_con_nav_box"></article>
-                <article class="in_con_nar_box"></article>
+                <article class="in_con_nav_box">
+                    <ul class="in_con_nav_text">
+                        <li><a href="#">graphic basic</a></li>
+                        <li><a href="#">visual design</a></li>
+                        <li><a href="#">web design</a></li>
+                        <li><a href="#">product design</a></li>
+                        <li><a href="#">interior design</a></li>
+                        <li><a href="#">gallery</a></li>
+                    </ul>
+                </article>
+                <article class="in_con_nar_box">
+                    <div id="in_con_nar_photo"><span class="me_hidden">그림</span></div>
+                    <div id="in_con_nar_txt">
+                        <p><strong>Pellentesque</strong> habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi.
+                        </p>
+                    </div>
+                </article>
             </section>
         </article>
         
         <div id="xidoFootWrap">
-            <footer id="xidoFoot">
+            <footer id="xidoFoot" role="contentinfo">
                 <h2 id="footerLogo"><span class="me_hidden">logo</span></h2>
                 <div id="footerNav">
-                    <ul class="footer_nav"></ul>
-                    <ul class="footer_add"></ul>
-                    <ul class="footer_copy"></ul>
+                    <ul class="footer_nav">
+                        <li><a href="#">개인정보</a></li>
+                        <li class="foot_nav_bar"> | </li>
+                        <li><a href="#">취급방침</a></li>
+                        <li class="foot_nav_bar"> | </li>
+                        <li><a href="#">이용자 약관</a></li>
+                        <li class="foot_nav_bar"> | </li>
+                        <li><a href="#">회사소개</a></li>
+                        <li class="foot_nav_bar"> | </li>
+                        <li><a href="#">고객센터</a></li>
+                    </ul>
+                    <p class="footer_add">대표이사: 이도형 | 주소주소주소주소 전화 이메일 주소주소주소주소 전화 이메일주소주소주소주소 전화 이메일</p>
+                    <span class="footer_copy">Copyright ⓒ xido.design All rights reserved</span>
                 </div>
                 <div id="footerRight">
-                    <ol class="family_site">
+                   <ul class="family_site">
+                       <li class="family_site_box">design.group</li>
+                       <li class="family_site_btn"></li>
+                   </ul>
+                    <ul class="family_site_list">
                         <li class="site01">site01</li>
                         <li class="site02">site02</li>
-                    </ol>
+                    </ul>
                     <span>designed by Ido.</span>
-                    <ol class="icon">
-                        <li class="icon01"></li>
-                        <li class="icon02"></li>
-                        <li class="icon03"></li>
-                    </ol>
+                    <ul class="icon">
+                        <li class="icon01 me_link"><a href="#"><span>수영</span></a></li>
+                        <li class="icon02 me_link"><a href="#"><span>양궁</span></a></li>
+                        <li class="icon03 me_link"><a href="#"><span>커피</span></a></li>
+                    </ul>
                 </div>
             </footer>
         </div><!--// #xidoFootWrap-->

@@ -26,7 +26,7 @@ header, article, section, footer, nav, aside, hgroup, figure {display: block;}
 
 
 /* normalize */
-.cf:before, .cf:after{content:""; display: none; display: block;}
+.clearfix::before, .clearfix::after{content:""; display: block; clear: both;}
 .me_link a{width: 100%; height: 100%; background-repeat: no-repeat; display: block;}
 a>span, .me_hidden, legend{width: 0; height: 0; display: block; overflow: hidden;}
 h2, h3, h4, h5, h6{width: 0; height: 0; overflow: hidden;}
