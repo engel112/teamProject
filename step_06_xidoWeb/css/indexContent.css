@@ -1,6 +1,7 @@
 /* --------------------- #indexContent ----------------------------- */
     #indexContent{width: 900px; min-height: 320px; height: auto; margin: 0 auto; background-color:#f06; padding: 20px 30px;}
-    #indexContent strong{font-weight: bold; color:#ff0;}
+   
+
         .in_con_head{width: 100%; height: 22px; margin-bottom: 18px;}
             .in_con_head>h1{width: 60px; height: 100%; margin-right: 8px; float: left; color: #fff; font: bold italic 1.25rem / 1 "myriad pro";}
             .in_con_head>.line{width: calc(100% - 116px); height: 10px; border-bottom: 1px solid #fff; float: left;}
@@ -8,15 +9,38 @@
             .in_con_head>.more>a>i{font-size: 22px; font-size: 1.375rem; color:#fff;
                                 transition: all 0.1s linear;}
             .in_con_head>.more:hover i {transform:rotate(-45deg);}
+
         .in_con_nar{width: 100%; height: 280px; margin-bottom: 20px;}
             .in_con_nar>.in_con_nav_box{width: 380px; height: 100%; float: left; background-image: url(../img/main/article/article_box_01.png);}
-            .in_con_nav_box>.in_con_nav_text {width: 120px; height: calc(100% - 60px); margin-left: 220px; padding: 30px 0;}
-                .in_con_nav_box>.in_con_nav_text>li {width: 100%; height: 18px; margin-bottom: 24px;}
+            .in_con_nav_box>.in_con_nav_text {width: 130px; height: calc(100% - 60px); margin-left: 220px; padding: 30px 0;}
+                .in_con_nav_box>.in_con_nav_text>li {width: 100%; height: 18px; margin-bottom: 23px;}
                 .in_con_nav_box>.in_con_nav_text>li:last-child {margin-bottom: 0;}
-                .in_con_nav_box>.in_con_nav_text>li>a {font: bold normal 1.2rem; color: #fff; text-decoration: underline;}
+                .in_con_nav_box>.in_con_nav_text>li>a {font-size: 1.1667rem; color: #fff; text-decoration: underline;}
+                .in_con_nav_box>.in_con_nav_text>li>a:hover {font-weight: bold; font-size:1.1667rem; color: #fff; text-decoration: underline;}
+
             .in_con_nar>.in_con_nar_box{width: 520px; height: 100%; float: left;}
             .in_con_nar>.in_con_nar_box>div{height: 100%; float: left;}
                 .in_con_nar_box>#in_con_nar_photo{width: 242px; background-image: url(../img/main/article/article_box_02.png);}
-                .in_con_nar_box>#in_con_nar_txt{width: 246px; height: calc(100% - 28px); background-image: url(../img/main/article/article_box_03.png); padding: 14px 16px; }
-                .in_con_nar_box>#in_con_nar_txt>p{color: #fff; line-height: 1.2rem;}
+                .in_con_nar_box>#in_con_nar_txt{width: calc(100% - 274px); height: calc(100% - 28px); padding: 14px 16px; overflow: hidden;
+                    background-image: linear-gradient(-165deg, #f06, 70%, #604);
+                    background-image: -webkit-linear-gradient(-165deg, #f06, 70%, #604);
+                    background-image: -moz-linear-gradient(-165deg, #f06, 70%, #604);
+                    background-image: -ms-linear-gradient(-165deg, #f06, 70%, #604);
+                    background-image: -o-linear-gradient(-165deg, #f06, 70%, #604);
+                    }
+/* ------ 벤더프리픽스 --------
+
+    정식 웹표준으로 승인되지 않았거나, 브라우저가 공식으로 지원하지 않는 경우 강제적으로 사용되도록 만드는 명령어 
+    브라우저 내부에 해당하는 기능이 내장되어 있지 않으면 작동하지 않는다.
+        -webkit-  :  크롬, 사파리, 스윙브라우저
+        -epub-    :  전자책
+        -moz-     :  파이어폭스
+        -ms-      :  익스플로러
+        -o-       :  오페라
+
+------------------------------------------ */
+
+
+                .in_con_nar_box>#in_con_nar_txt>p{width: 100%; height: 100%; color: #fff; line-height: 1.2rem; overflow-y: scroll; padding-right: 50%}
+                #in_con_nar_txt>p>*{color:inherit; font-weight:bold;}
         .in_con_2{width: 45%; float: left; margin-right: 2.5%;}
