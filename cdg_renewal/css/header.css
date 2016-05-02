@@ -1,0 +1,18 @@
+#containter{width: 100%; height: auto;}
+header,footer{margin: 0 auto; width: 960px; height: 100%; background: rgba(255,255,255,0.6);}
+
+/* header */
+
+#headerWrap{width: 100%; height: 80px; background-color: #fff; position: fixed; z-index: 200;}
+#header{width: 940px; height: 100%;padding: 0 10px;}
+    h1{width: 182px; height: 100%; margin-right: 60px; float: left;}
+        h1>a{background-image: url(../img/logo.jpg); background-position: center center;}
+    #gnb {height: 100%; float: left;}
+        #gnb>ul {width: 100%; height: 100%;}
+        #gnb>ul>li {float: left; margin-right: 46px; margin-top: 29px;}
+            #gnb>ul>li>a{font-size:1rem; font-weight: bold; padding-bottom: 29px;}
+            #gnb>ul>li>a:hover{border-bottom: 3px solid #933637;}
+            #gnb>ul>li:last-child{margin-right: 0;}
+    #menu {height:100%; float: right; margin-right: 12px;}
+    #menu>a{font-size: 1.625rem; color:#c5c5c5; line-height: 80px;}
+    #menu>a:hover{color:#933637;}

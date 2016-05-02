@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/x-icon" href="#" />
+    <link rel="apple-touch-icon" href="#" />
+    <link rel="stylesheet" href="./css/lib/reset.css" />    
+    <link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="./css/sub_certify.css" />
+        <!--[if lte IE 9]>        
+<script src="./js/dist/html5shiv.min.js"></script>
+<script src="./js/dist/ie9.min.js"></script>
+<script src="./js/dist/PIE.js"></script>
+<script src="./js/dist/responsive.min.js"></script>
+    <![endif]-->
+<script src="./js/jquery/jquery-1.12.3.min.js"></script>
+<script src="./js/jquery/jquery-migrate-1.3.0.min.js"></script>
+<script src="./js/jquery/jquery-ui.min.js"></script>
+    <title>Document</title>
+    <style></style>
+    <script>
+        $(document).ready(function(){
+// $() : css에서의 선택자를 표현한 것!! () 내부에 css 선택자와 동일하게 작성 (일부 예외)
+            $(".index_btn>a").on("click", function(e){
+                e.preventDefault();
+            })
+        });
+        
+    </script>
+</head>
+<body>
+    <div id="container">
+        <div id="xidoHeadWrap">
+            <header id="xidoHead" role="banner">
+                <h1 id="headH1" class="me_link"><a href="index.html" title="xido Design education"><span>xido Design education</span></a></h1>
+                <div class="nar"></div>
+                <div class="site_map">
+                    <ul class="site_map_list">
+                        <li class="site_map01"><a href="#">Log In</a></li>
+                        <li class="site_map02"><a href="#">Join</a></li>
+                        <li class="site_map03 me_last"><a href="#">Q&amp;A</a></li>
+                    </ul>
+                    <form id="search" action="#" method="get" role="search"><!-- search -->
+                        <fieldset>
+                            <legend>웹검색</legend>
+                            <label for="search_txt" class="me_hidden">시도웹페이지에서 필요한 항목을 검색하세요.</label>
+                            <input type="search" name="search_txt" id="search_txt" />
+                            <label for="search_btn" class="me_hidden">검색</label>
+                            <button type="button" class="fa fa-search" aria-hidden="true"><span class="me_hidden">검색</span></button>
+                        </fieldset><!-- search 끝-->
+                    </form>
+                </div>
+                <nav id="gnb" class="me_link">
+                    <ul id="gnb_bar" role="menu">
+                        <li class="gnb01"><a href="#">about.xido</a></li>
+                        <li class="gnb02"><a href="#">graphic.basic</a></li>
+                        <li class="gnb03"><a href="#">design.guide</a></li>
+                        <li class="gnb04"><a href="#">design.portfolio</a></li>
+                        <li class="gnb05"><a href="#">gallery</a></li>
+                        <li class="gnb06"><a href="#">guest</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div id="xidoHeadSide"><!--side design--></div>
+        </div><!--// #xidoHeadWrap-->
+     
+        <article id="certify">
+         <iframe src="./certifycation.html" frameborder="0"></iframe>
+     </article>   
+        
+        <div id="xidoFootWrap">
+            <footer id="xidoFoot" role="contentinfo">
+                <h2 id="footerLogo">
+                <strong>xido</strong>
+                <span>Let's playing design group</span></h2>
+                <div id="footerNav">
+                    <ul class="footer_nav">
+                        <li><a href="#">개인정보</a></li>
+                        <li><a href="#">취급방침</a></li>
+                        <li><a href="#">이용자 약관</a></li>
+                        <li><a href="#">회사소개</a></li>
+                        <li><a href="#">고객센터</a></li>
+                    </ul>
+                    <p class="footer_add">대표이사: 이도형 | 주소주소주소주소 전화 이메일 주소주소주소주소 전화 이메일주소주소주소주소 전화 이메일</p>
+                    <span class="footer_copy">Copyright ⓒ xido.design All rights reserved</span>
+                </div>
+                <div id="footerRight">
+
+                   <div class="etc">
+                       <!-- 1. 공식 지정방법 -->
+                       <form action="">
+                           <fieldset>
+                            <legend>family site</legend>
+                             <label for="familyBox" class="me_hidden"></label>
+                              <select name="familyBox" id="familyBox">
+                               <option value=""></option>
+                               <option value="">네이버</option>
+                               <option value="">다음</option>
+                               <option value="">구글</option>
+                               <option value="">라이코스</option>
+                               <option value="">천리안</option>
+                              </select>
+                              <button>GO</button>
+                           </fieldset>
+                       </form>
+                   
+                   
+                    <!--                  2. 디자인 방법-->
+                    <dl>
+                        <dt><span class="me_hidden">site</span></dt>
+                        <dd>
+                            <li><a href="#">site_1</a></li>
+                            <li><a href="#">site_2</a></li>
+                            <li><a href="#">site_3</a></li>
+                            <li><a href="#">site_4</a></li>
+                            <li><a href="#">site_5</a></li>
+                            
+                        </dd>
+                    </dl>
+                    </div><!--// #etc-->
+<!-- me ------------------------------------------------------------
+                   <ul class="family_site">
+                       <li class="family_site_box">design.group</li>
+                       <li class="family_site_btn"></li>
+                   </ul>                   
+                    <ul class="family_site_list">
+                        <li class="site01">site01</li>
+                        <li class="site02">site02</li>
+                    </ul>
+-->
+                    <span>designed by Ido.</span>
+                    <ul class="icon">
+                        <li class="icon01 me_link"><a href="#"><span>수영</span></a></li>
+                        <li class="icon02 me_link"><a href="#"><span>양궁</span></a></li>
+                        <li class="icon03 me_link"><a href="#"><span>커피</span></a></li>
+                    </ul>
+                </div>
+            </footer>
+        </div><!--// #xidoFootWrap-->
+    </div><!--// #container-->
+</body>
+</html>

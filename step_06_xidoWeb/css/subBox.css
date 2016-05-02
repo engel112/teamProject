@@ -1,0 +1,4 @@
+/* subBox.css */
+
+#certify{width: 500px; height: auto; margin: 0 auto; padding: 70px 0 200px; background-color: #acc; overflow: hidden;}
+#certify>iframe{width: 500px; height: 405px;}
