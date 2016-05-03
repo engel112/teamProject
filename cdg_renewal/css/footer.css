@@ -30,6 +30,6 @@
     .footer_etc>.link_btn {width: 126px; height: 16px; float: right; margin-bottom: 15px;}
         .footer_etc>.link_btn>li {width: 30px; height: 100%; float: left; margin-right: 20px; font-size:1.5rem; line-height: 1rem; color:#335161; cursor: pointer;}
         .footer_etc>.link_btn>li:hover {color:#933637;}
-    .footer_etc .language {width: 126px; height: 32px; float: right; border:1px solid #c5c5c5; box-sizing: border-box;}
-    .footer_etc .language select{width: 94px; height: 100%; float: left;}
+    .footer_etc .language {width: 126px; height: 32px; float: right;  }
+    .footer_etc .language select{width: 94px; height: 100%; float: left; border:1px solid #c5c5c5; box-sizing: border-box;}
     .footer_etc .language button {width: 30px; height: 100%; float: left;}
