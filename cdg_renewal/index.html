@@ -48,7 +48,8 @@
         <section id="sectionWrap">
             <article id="article01Wrap">
             <div id="article01">
-            <span><em>창덕궁</em> <br/> WORLD HERITAGE</span>
+            <span><em>창덕궁</em>
+            <br/>Changdeokgung Palace</span>
             <ul class="banner">
                 <li><span class="me_hidden">banner01</span></li>
                 <li><span class="me_hidden">banner02</span></li>
@@ -99,34 +100,39 @@
                 <span class="subject">관람 시간 및 요금</span>
                 <span class="bar"></span>
                 <div class="btn_box">
-                    <button class="art04_btn01">일반 관람</button>
-                    <button class="art04_btn02">후원특별 관람</button>
+                   <form action="" method="get">
+                   <fieldset>
+                       <legend>관람시간 및 요금 버튼</legend>
+                        <button class="art04_btn01" name="view_btn">일반 관람</button>
+                        <button class="art04_btn02" name="view_btn2">후원특별 관람</button>
+                    </fieldset>
+                    </form>
                 </div>
                 <dl class="timetable">
                     <dt>관람 기간</dt>
                     <dt>매표 시간</dt>
                     <dt>관람 시간</dt>
                         <dd>2월 ~ 5월 / 9월 ~ 10월</dd>
-                        <dd>2월 ~ 5월 / 9월 ~ 10월</dd>
-                        <dd>2월 ~ 5월 / 9월 ~ 10월</dd>
+                        <dd>6월 ~ 8월</dd>
+                        <dd>11월 ~ 1월</dd>
                         <dd>09:00 ~ 17:00</dd>
-                        <dd>09:00 ~ 17:00</dd>
-                        <dd>09:00 ~ 17:00</dd>
-                        <dd>09:00 ~ 17:00</dd>
-                        <dd>09:00 ~ 17:00</dd>
-                        <dd>09:00 ~ 17:00</dd>
+                        <dd>09:00 ~ 17:30</dd>
+                        <dd>09:00 ~ 16:00</dd>
+                        <dd>09:00 ~ 18:00</dd>
+                        <dd>09:00 ~ 18:30</dd>
+                        <dd>09:00 ~ 17:30</dd>
                 </dl>
                 <dl class="price">
                     <dt>대인 (만 25세 ~ 만 64세)</dt>
                     <dd>3,000원</dd>
                     <dt>소인 (만 24세 이하)</dt>
-                    <dd>3,000원</dd>
+                    <dd>무료(외국인 제외)</dd>
                     <dt>단체 (10명 이상)</dt>
-                    <dd>3,000원</dd>
+                    <dd>무료대상자를 제외하고 10명 이상일 경우에 전각 요금 20% 할인</dd>
                     <dt>무료</dt>
-                    <dd>3,000원</dd>
+                    <dd>상세 페이지 참조</dd>
                 </dl>
-                <div class="art04_btn_more"><a href="#">자세히 보기</a></div>
+                <a href="#"><div class="art04_btn_more">자세히 보기<i class="fa fa-angle-right" aria-hidden="true"><!--화살표--></i></div></a>
                 
             </div><!--// #article04-->
             </article>
@@ -136,18 +142,29 @@
       <div id="footerWrap">
         <footer id="footer">
             <h2>창덕궁 정보</h2>
+            <div id="footerMenubarWrap">
             <div class="footer_menubar">
+            <h3>개인정보처리방침 및 침해신고센터</h3>
             <ul class="footer_menu">
-                <li>개인정보처리방침</li>
+                <li><a href="#">개인정보처리방침</a></li>
                 <li><span class="menu_sidebar"><!-- sidebar --></span></li>
-                <li>개인정보침해신고센터</li>
+                <li><a href="#">개인정보침해신고센터</a></li>
             </ul>
-            <dl class="family">
-                <dd>관련사이트</dd>
-                <dd>arrow</dd>
-            </dl>
+            <form action="" method="get">
+                <fieldset class="family">
+                    <legend>패밀리사이트</legend>
+                    <select name="familysite" value="패밀리사이트">
+                        <option value="문화재청">문화재청</option>
+                        <option value="국민신문고">국민신문고</option>
+                        <option value="문화유산채널">문화유산채널</option>
+                    </select>
+                    <button type="button" name="go" value="go">GO</button>
+                </fieldset>
+            </form>
+            </div>
             </div>
             <div class="footer_etc">
+            <h3>창덕궁 위치</h3>
             <ul class="footer_logo">
                 <li class="cdg_logo"><span class="me_hidden">문화재청 창덕궁</span></li>
                 <li class="unesco"><span class="me_hidden">세계문화유산</span></li>
@@ -159,13 +176,21 @@
                 <li class="copy">COPYRIGHT 2004-2008 문화재청 창덕궁 관리소. ALL RIGHTS RESERVED.</li>
             </ul>
             <ul class="link_btn">
-                <li>mail</li>
-                <li>twitter</li>
+                <li class="fa fa-envelope" aria-hidden="true"><span class="me_hidden">mail</span></li>
+                <li class="fa fa-twitter" aria-hidden="true"><span class="me_hidden">twitter</span></li>
             </ul>
-            <ul class="language">
-                <li>Language</li>
-                <li>arrow</li>
-            </ul>
+            <form action="" method="get">
+                <fieldset class="language">
+                    <legend>language</legend>
+                        <select class="language_select">
+                            <option value="Language">Language</option>
+                            <option value="English">English</option>
+                            <option value="한국어">한국어</option>
+                            <option value="일본어">日本語</option>
+                        </select>
+                        <button type="button" name="go" value="go">GO</button>
+                </fieldset>
+            </form>
             </div>
         </footer>
       </div><!--// #footerWrap-->
