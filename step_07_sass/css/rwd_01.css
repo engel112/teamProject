@@ -1,0 +1,218 @@
+* {
+  transition: all 0.5s; }
+
+#pcAd {
+  display: none; }
+
+@media screen and (max-width: 480px) {
+  .container {
+    width: 100%;
+    height: auto;
+    background-color: #ecc; }
+
+  #headBox {
+    width: 100%;
+    height: auto;
+    padding-top: 20px; }
+    #headBox > h1 {
+      width: 100px;
+      height: 30px;
+      background-color: #fff;
+      margin-left: calc(50% - 50px);
+      margin-bottom: 20px; }
+    #headBox > #gnb {
+      width: 86%;
+      height: 300px;
+      margin-left: 7%;
+      background-color: #fff;
+      margin-bottom: 20px; }
+
+  #ad {
+    display: none; }
+
+  #content {
+    width: 100%;
+    height: 500px;
+    background-color: #fda; } }
+@media screen and (min-width: 481px) and (max-width: 640px) {
+  .container {
+    width: 100%;
+    height: auto;
+    background-color: #ecc; }
+
+  #headBox {
+    width: 100%;
+    height: auto;
+    padding-top: 20px; }
+    #headBox > h1 {
+      width: 100px;
+      height: 30px;
+      background-color: #fff;
+      margin-left: 7%;
+      margin-bottom: 20px; }
+    #headBox > #gnb {
+      width: 86%;
+      height: 62.5vw;
+      /* 300/480*100 */
+      margin-left: 7%;
+      background-color: #fff;
+      margin-bottom: 20px; }
+
+  #ad {
+    display: none; }
+
+  #content {
+    width: 100%;
+    height: 500px;
+    background-color: #fda; } }
+@media screen and (min-width: 641px) and (max-width: 768px) {
+  .container {
+    width: 100%;
+    height: auto;
+    background-color: #ecc; }
+
+  #headBox {
+    width: 90%;
+    height: auto;
+    padding: 10px 5%; }
+    #headBox > h1 {
+      width: 80px;
+      height: 40px;
+      background-color: #fff;
+      float: left; }
+    #headBox > #gnb {
+      width: 400px;
+      height: 40px;
+      background-color: #fff;
+      float: right; }
+    #headBox::after {
+      content: "";
+      display: block;
+      clear: both; }
+
+  #ad {
+    width: 100%;
+    height: 62.402496vw;
+    /* 400/641*100 */
+    background-color: #086; }
+    #ad .tip_box {
+      display: none; }
+
+  #content {
+    width: 100%;
+    height: 500px;
+    background-color: #fda; } }
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .container {
+    width: 100%;
+    height: auto;
+    background-color: #ecc; }
+
+  #headBox {
+    width: 90%;
+    height: auto;
+    padding: 10px 5%; }
+    #headBox > h1 {
+      width: 80px;
+      height: 40px;
+      background-color: #fff;
+      float: left; }
+    #headBox > #gnb {
+      width: 400px;
+      height: 40px;
+      background-color: #fff;
+      float: right; }
+    #headBox::after {
+      content: "";
+      display: block;
+      clear: both; }
+
+  #ad {
+    width: 100%;
+    height: 62.402496vw;
+    /* 400/641*100 */
+    background-color: #086;
+    position: relative; }
+    #ad > .tip_box {
+      width: 20%;
+      height: 25.97402vw;
+      /* 30/770*100 */
+      background-image: linear-gradient(rgba(0, 0, 0, 0.6), 70%, rgba(0, 0, 0, 0.4));
+      position: absolute;
+      top: 0;
+      left: 5%;
+      box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+      color: #fff;
+      font-family: georgia;
+      font-size: 5vw;
+      text-indent: 5px; }
+
+  #content {
+    width: 100%;
+    max-width: 960px;
+    height: 500px;
+    background-color: #fda;
+    margin: 0 auto; } }
+@media screen and (min-width: 1025px) {
+  .container {
+    width: 100%;
+    height: auto;
+    background-color: #ecc; }
+
+  #headBox {
+    width: 90%;
+    height: auto;
+    padding: 10px 5%; }
+    #headBox > h1 {
+      width: 80px;
+      height: 60px;
+      background-color: #fff;
+      float: left; }
+    #headBox > #gnb {
+      width: 400px;
+      height: 60px;
+      background-color: #fff;
+      float: right; }
+    #headBox::after {
+      content: "";
+      display: block;
+      clear: both; }
+
+  #pcAd {
+    width: 100%;
+    height: 40vw;
+    background-color: #75e;
+    text-align: center;
+    line-height: 40vw;
+    font-size: 10vw;
+    color: #ffe;
+    font-weight: bold;
+    display: block; }
+
+  #ad {
+    width: 100%;
+    height: 62.402496vw;
+    /* 400/641*100 */
+    background-color: #086;
+    position: relative; }
+    #ad > .tip_box {
+      width: 20%;
+      height: 25.97402vw;
+      /* 30/770*100 */
+      background-image: linear-gradient(rgba(0, 0, 0, 0.6), 70%, rgba(0, 0, 0, 0.4));
+      position: absolute;
+      top: 0;
+      left: 5%;
+      box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+      color: #fff;
+      font-family: georgia;
+      font-size: 5vw;
+      text-indent: 5px; }
+
+  #content {
+    width: 960px;
+    height: 500px;
+    background-color: #fda;
+    margin: 0 auto; } }
+
+/*# sourceMappingURL=rwd_01.css.map */

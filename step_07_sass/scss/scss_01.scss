@@ -1,0 +1,46 @@
+@import "./lib/_scss_basic";
+
+// scss_01.scss
+//한줄주석은 compile이 되지 않는다.
+/*변환여부확인*/
+
+
+
+*{margin: 0; padding: 0; border: 0; font-family: sans-serif;}
+*:focus{outline: 2px solid #fa0;}
+
+html, body{height: 100%;}
+#wrap{width: 100%; height: 100%; margin: 0 auto;
+    >div{padding-top: 50px; height: calc(100% - 50px);}
+    #header{width: 100%; height: 40px; padding-top:10px; background-color:rgba(darken($mainColor, 20%), 0.5);
+position: fixed; top: 0; left: 0; z-index: 500;}
+    >#article{width: 100%; background-color:darken($sub1Color, 40%);}
+    >#aside{width: 100%; background-color:$sub2;}
+    >#content{width: 100%; background-color: lighten($black, 20%);}
+    >#content2{@extend #aside; background-color: #f60;}
+    >#footer{width: 100%; height: 100px; background-color:$white;}
+    
+}// #wrap
+
+#header{
+    >h1{width: 100px; height: 30px; float: left; background-color: $white; text-align: center; line-height: 30px;
+        >a{color: $black; font-family: 'Open Sans', sans-serif; font-size: 1.2rem;}
+    }//h1
+    >ul{width: 600px; height: 30px; float: right; background-color: $white;
+        li{width: calc((100% - 4px) / 5); height: 100%; border-right: $line; float: left;
+            text-align: center; line-height : 30px; list-style: none;
+            &:last-child{border-right :0;}
+            a{color:$sub2; text-decoration :none; transition: all 0.5s ease; font-family: 'Noto Sans KR', sans-serif;
+                &:hover{text-decoration: underline; font-weight: bold; font-size: 1.1rem; color:$mainColor;}}
+        }// li
+    }// ul
+}// #header
+
+
+#article {
+    form{@include formBox($w: 100%, $bg1:#cff);}
+    >fieldset>input{margin-left: 10px;}
+}
+#aside {
+    form{@include formBox($w: 50%, $h:40px, $bg1:$white, $bg2:$mainColor);}
+}
