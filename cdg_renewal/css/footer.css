@@ -27,7 +27,7 @@
         .footer_etc>.address>.add {height: 40px; margin-bottom: 12px; font-size: 1rem; }
         .footer_etc>.address>.copy {height: 32px; font-size: 0.875rem;}
 
-    .footer_etc>.link_btn {width: 126px; height: 16px; float: right; margin-bottom: 15px;}
+    .footer_etc>.link_btn {width: 126px; height: 16px; float: right; margin-bottom: 20px;}
         .footer_etc>.link_btn>li {width: 30px; height: 100%; float: left; margin-right: 20px; font-size:1.5rem; line-height: 1rem; color:#335161; cursor: pointer;}
         .footer_etc>.link_btn>li:hover {color:#933637;}
     .footer_etc .language {width: 126px; height: 32px; float: right;  }

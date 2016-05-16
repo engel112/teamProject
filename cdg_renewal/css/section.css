@@ -1,5 +1,12 @@
 /* section */
 
+#side_button{position:fixed; top:50%; left: 50%; margin-top: -17px; margin-left:500px; width: 16px; height: 114px; z-index:500;}
+#side_button>ul{width: 100%; height: 100%;}
+#side_button>ul>li{width: 100%; height:16px; margin-bottom: 10px; float: left;}
+#side_button>ul>li:last-child{margin: 0;}
+#side_button>ul>li>a{width: 100%; height: 100%; border-radius: 20px; background: rgba(200,200,200,.7); display: block;}
+#side_button>ul>li>a:hover{background-color: #933637;}
+
 section{width: 100%; height: 2400px; background-color: #eee; padding-top: 80px;}
 section>article{width: 100%; height: calc(100% / 4);}
 section>article>div{width: 960px; height: 100%; margin: 0 auto;}
@@ -11,13 +18,13 @@ div>.subject{width: 100%; font-size: 2rem; font-weight: bold; line-height: 2rem;
 div>.bar{width: 50px; height: 3px; background-color: #c5c5c5; margin: 24px calc(50% - 25px); display: block;}
 
 /* 창덕궁 */
-    #article01{width: 960px; overflow: hidden; position: relative;}
-    #article01>span{width: 100%; position: absolute; top: 50%; z-index:100; text-align: center; font-size:1.2rem; color:#fff;}
+    #article01{width: 100%; overflow: hidden; position: relative;}
+    #article01>span{width: 100%; position: absolute; top: 40%; z-index:100; text-align: center; font-size:1.2rem; letter-spacing: 5px; color:#fff;}
     #article01>span>em{width: 100%; font-size: 5.625rem; color:#fff;}
-    #article01>ul{width: 300%; height: 100%;}
-    #article01>ul>li{width: 960px; height:100%; float: left;}
+    #article01>ul{width: 300%; height: 100%; margin-left: -100%;}
+    #article01>ul>li{width: 100%; height:100%; float: left;}
     #article01>ul>li:nth-child(1){background-color: #fad; margin-left:-100%;}
-    #article01>ul>li:nth-child(2){background-image:url(../img/section/mainbg.JPG); background-repeat: no-repeat; background-position: center -150px; background-size: 1200px}
+    #article01>ul>li:nth-child(2){background-image:url(../img/section/mainbg.JPG); background-repeat: no-repeat; background-position: center 78%; background-size: 2000px;}
     #article01>ul>li:nth-child(3){background-color: #ffd;}
     #article02{width: 960px; overflow: hidden; position: relative;}
 
