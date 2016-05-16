@@ -1,18 +1,18 @@
 /* section */
 
-#side_button{position:fixed; top:50%; left: 50%; margin-top: -17px; margin-left:500px; width: 16px; height: 114px; z-index:500;}
+#side_button{position:fixed; top:50%; left: 50%; margin-top: -17px; margin-left:500px; width: 14px; height: 114px; z-index:500;}
 #side_button>ul{width: 100%; height: 100%;}
-#side_button>ul>li{width: 100%; height:16px; margin-bottom: 10px; float: left;}
+#side_button>ul>li{width: 100%; height:14px; margin-bottom: 12px; float: left;}
 #side_button>ul>li:last-child{margin: 0;}
-#side_button>ul>li>a{width: 100%; height: 100%; border-radius: 20px; background: rgba(200,200,200,.7); display: block;}
+#side_button>ul>li>a{width: 100%; height: 100%; border-radius: 14px; background: rgba(200,200,200,.7); display: block; transition: all .3s;}
 #side_button>ul>li>a:hover{background-color: #933637;}
 
 section{width: 100%; height: 2400px; background-color: #eee; padding-top: 80px;}
 section>article{width: 100%; height: calc(100% / 4);}
 section>article>div{width: 960px; height: 100%; margin: 0 auto;}
-section>#article02Wrap{background-color: #335161;}
-section>#article03Wrap{background-color: #f4f4f2;}
-section>#article04Wrap{background-color: #fff;}
+section>#article02Wrap{background-color: #335161; background-image: url(../img/pattern2.jpg); background-blend-mode: color-burn;}
+section>#article03Wrap{background-color: #f4f4f2; background-image: url(../img/pattern2.jpg); background-blend-mode: darken;}
+section>#article04Wrap{background-color: #fff; background-image: url(../img/pattern2.jpg); background-blend-mode: color-burn;}
 
 div>.subject{width: 100%; font-size: 2rem; font-weight: bold; line-height: 2rem; color: #333; letter-spacing: -0.125rem; text-align: center;display: block;}
 div>.bar{width: 50px; height: 3px; background-color: #c5c5c5; margin: 24px calc(50% - 25px); display: block;}
@@ -29,14 +29,14 @@ div>.bar{width: 50px; height: 3px; background-color: #c5c5c5; margin: 24px calc(
     #article02{width: 960px; overflow: hidden; position: relative;}
 
 /* 창덕궁소개 */
-#article02{background-color: inherit;}
+
 #article02>div {width: 50%; height: 100%; float: left;}
-#article02>.art02_left {background-image: url(../img/section/img.png); background-position: center center;}
+#article02>.art02_left {background-image: url(../img/section/img.png); background-position: center center; background-repeat: no-repeat;}
     #article02>.art02_right>.art02_right_inbox {width: calc(80% - 80px); height: calc(80% - 80px); background-color: #fff; margin-top: 10%; margin-left: 10%; padding: 40px;}
     #article02>.art02_right>.art02_right_inbox>.text {width: 100%; height: 296px; font-size: 0.875rem; line-height: 1.5rem; overflow-y: scroll; padding-right: 50%;}
 
 /* 찾아오시는 길 */
-#article03{background-color: inherit; height: calc(100% - 32px); padding: 0 32px;}
+#article03{height: calc(100% - 32px); padding: 0 32px;}
 #article03>.subject{margin-top: 32px;}
 #article03>.map{width: 860px; height: 300px; background-image: url(../img/section/map.png); margin: 0px 50px 16px;}
 #article03>.map_info{width:660px; margin:0 160px;}

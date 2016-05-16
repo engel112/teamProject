@@ -18,3 +18,12 @@ button:hover{background-color: #933637; color:#f4f4f2;}
     #menu {height:100%; float: right; margin-right: 12px;}
     #menu>a{font-size: 1.625rem; color:#c5c5c5; line-height: 80px;}
     #menu>a:hover{color:#933637;}
+    
+#submenuWrap{width: 100%; height: 100%; background-color: rgba(0,0,0,0.7); position: fixed; z-index: 100; top: 80px; display: none;}
+#submenu{width: 760px; height: 100%; background-color: #335161; padding: 100px; margin: 0 auto; background-image: url(../img/pattern2.jpg); background-blend-mode: color-burn;}
+    #submenu>dl{width: 20%; height: 50%; margin-bottom: 30px; float: left;}
+    #submenu>dl>dt, #submenu>dl>dd>a{width: 100%; color:#f4f4f2;}
+    #submenu>dl>dt{width: 100%; height: 40px; font-size:1.2rem; font-weight: bold; line-height: 40px;}
+    #submenu>dl>dd{width: 100%; height: 30px; font-size:0.9rem; line-height: 30px; text-indent: 5px;}
+    #submenu>dl>dd>span{width: 60px; height: 12px; border-bottom: 2px solid #933637; display: block; margin-left: 5px;}
+    #submenu>dl>dd>a:hover{font-weight: bold;}

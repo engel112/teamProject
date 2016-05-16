@@ -24,8 +24,13 @@
     <style></style>
         <script>
         $(function(){
-            $("#header").find("ul").find("a").on("click", function(){
-                    $("html, body").animate({scrollTop:$(this.hash).offset().top},500);
+            var $menu = $('#menu');
+            var $submenu = $('#submenuWrap');
+            
+            $submenu.hide();
+            $menu.on('click', function(){
+                $submenu.stop().slideToggle(700);
+                
             });
         });
     </script>
@@ -47,49 +52,58 @@
             </ul>
         </nav>
             <div id="menu"><a href="#" class="fa fa-bars" aria-hidden="true"><span>메뉴버튼</span></a></div>
-            <div id="nav"><!--클릭시 나오는 메뉴-->
-                <ul>
-                    <li><a href="#">n_menu_01</a></li>
-                    <li><a href="#">n_menu_02</a></li>
-                    <li><a href="#">n_menu_03</a></li>
-                    <li><a href="#">n_menu_04</a></li>
-                    <li><a href="#">n_menu_05</a></li>
-                    <li><a href="#">n_menu_06</a></li>
-                </ul>
-                <ul>
-                    <li><a href="#">n_menu_01</a></li>
-                    <li><a href="#">n_menu_02</a></li>
-                    <li><a href="#">n_menu_03</a></li>
-                    <li><a href="#">n_menu_04</a></li>
-                    <li><a href="#">n_menu_05</a></li>
-                    <li><a href="#">n_menu_06</a></li>
-                </ul>
-                <ul>
-                    <li><a href="#">n_menu_01</a></li>
-                    <li><a href="#">n_menu_02</a></li>
-                    <li><a href="#">n_menu_03</a></li>
-                    <li><a href="#">n_menu_04</a></li>
-                    <li><a href="#">n_menu_05</a></li>
-                    <li><a href="#">n_menu_06</a></li>
-                </ul>
-                <ul>
-                    <li><a href="#">n_menu_01</a></li>
-                    <li><a href="#">n_menu_02</a></li>
-                    <li><a href="#">n_menu_03</a></li>
-                    <li><a href="#">n_menu_04</a></li>
-                    <li><a href="#">n_menu_05</a></li>
-                    <li><a href="#">n_menu_06</a></li>
-                </ul>
-                <ul>
-                    <li><a href="#">n_menu_01</a></li>
-                    <li><a href="#">n_menu_02</a></li>
-                    <li><a href="#">n_menu_03</a></li>
-                    <li><a href="#">n_menu_04</a></li>
-                    <li><a href="#">n_menu_05</a></li>
-                    <li><a href="#">n_menu_06</a></li>
-                </ul>
-            </div>
         </header>
+            <!--클릭시 나오는 메뉴-->
+            <div id="submenuWrap">
+               <div id="submenu">
+                <dl>
+                   <dt>창덕궁 이야기</dt>
+                    <dd><span><!--구분바--></span></dd>
+                    <dd><a href="#">창덕궁 인사말</a></dd>
+                    <dd><a href="#">창덕궁 소개</a></dd>
+                    <dd><a href="#">창덕궁 역사</a></dd>
+                    <dd><a href="#">창덕궁 위치</a></dd>
+                    <dd><a href="#">창덕궁 사계</a></dd>
+                    <dd><a href="#">세계유산 창덕궁</a></dd>
+                </dl>
+                <dl>
+                   <dt>관람 안내</dt>
+                    <dd><span><!--구분바--></span></dd>
+                    <dd><a href="#">관람 코스</a></dd>
+                    <dd><a href="#">요금 및 관람시간</a></dd>
+                    <dd><a href="#">편의시설 안내</a></dd>
+                    <dd><a href="#">주변 둘러보기</a></dd>
+                    <dd><a href="#">관람객 권리·협조사항</a></dd>
+                </dl>
+                <dl>
+                   <dt>관람 예약</dt>
+                    <dd><span><!--구분바--></span></dd>
+                    <dd><a href="#">후원관람예약</a></dd>
+                    <dd><a href="#">청소년 단체관람 신청</a></dd>
+                    <dd><a href="#">장소사용 및 촬영허가</a></dd>
+                    <dd><a href="#">청소년 문화학교</a></dd>
+                    <dd><a href="#">달빛기행</a></dd>
+                </dl>
+                <dl>
+                   <dt>참여 공간</dt>
+                    <dd><span><!--구분바--></span></dd>
+                    <dd><a href="#">공지사항</a></dd>
+                    <dd><a href="#">자주묻는 질문</a></dd>
+                    <dd><a href="#">교육행사 이모저모</a></dd>
+                    <dd><a href="#">전자민원</a></dd>
+                </dl>
+                <dl>
+                   <dt>자료실</dt>
+                    <dd><span><!--구분바--></span></dd>
+                    <dd><a href="#">궁궐소개</a></dd>
+                    <dd><a href="#">발간자료</a></dd>
+                    <dd><a href="#">사진 및 동영상</a></dd>
+                    <dd><a href="#">행정정보</a></dd>
+                    <dd><a href="#">조직 및 연락처</a></dd>
+                    <dd><a href="#">가이드북 다운로드</a></dd>
+                </dl>
+                </div><!--// #submenu-->
+            </div><!--// #submenuWrap-->
         </div><!--// #headerWrap-->
         
 <!--        section ------------------------------------------------------------------->
