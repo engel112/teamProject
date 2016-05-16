@@ -22,6 +22,13 @@
     <link rel="stylesheet" href="./js/jquery/jquery-ui.min.js" />
     <title>창덕궁 - 세계문화유산</title>
     <style></style>
+        <script>
+        $(function(){
+            $("#header").find("ul").find("a").on("click", function(){
+                    $("html, body").animate({scrollTop:$(this.hash).offset().top},500);
+            });
+        });
+    </script>
 </head>
 <body>
     <div id="container">
@@ -40,11 +47,60 @@
             </ul>
         </nav>
             <div id="menu"><a href="#" class="fa fa-bars" aria-hidden="true"><span>메뉴버튼</span></a></div>
+            <div id="nav"><!--클릭시 나오는 메뉴-->
+                <ul>
+                    <li><a href="#">n_menu_01</a></li>
+                    <li><a href="#">n_menu_02</a></li>
+                    <li><a href="#">n_menu_03</a></li>
+                    <li><a href="#">n_menu_04</a></li>
+                    <li><a href="#">n_menu_05</a></li>
+                    <li><a href="#">n_menu_06</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">n_menu_01</a></li>
+                    <li><a href="#">n_menu_02</a></li>
+                    <li><a href="#">n_menu_03</a></li>
+                    <li><a href="#">n_menu_04</a></li>
+                    <li><a href="#">n_menu_05</a></li>
+                    <li><a href="#">n_menu_06</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">n_menu_01</a></li>
+                    <li><a href="#">n_menu_02</a></li>
+                    <li><a href="#">n_menu_03</a></li>
+                    <li><a href="#">n_menu_04</a></li>
+                    <li><a href="#">n_menu_05</a></li>
+                    <li><a href="#">n_menu_06</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">n_menu_01</a></li>
+                    <li><a href="#">n_menu_02</a></li>
+                    <li><a href="#">n_menu_03</a></li>
+                    <li><a href="#">n_menu_04</a></li>
+                    <li><a href="#">n_menu_05</a></li>
+                    <li><a href="#">n_menu_06</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">n_menu_01</a></li>
+                    <li><a href="#">n_menu_02</a></li>
+                    <li><a href="#">n_menu_03</a></li>
+                    <li><a href="#">n_menu_04</a></li>
+                    <li><a href="#">n_menu_05</a></li>
+                    <li><a href="#">n_menu_06</a></li>
+                </ul>
+            </div>
         </header>
         </div><!--// #headerWrap-->
         
 <!--        section ------------------------------------------------------------------->
-     
+         <div id="side_button">
+        <ul>
+            <li><a href="#article01Wrap"></a></li>
+            <li><a href="#article02Wrap"></a></li>
+            <li><a href="#article03Wrap"></a></li>
+            <li><a href="#article04Wrap"></a></li>
+        </ul>
+    </div><!--// #side_button-->
         <section id="sectionWrap">
             <article id="article01Wrap">
             <div id="article01">
@@ -195,5 +251,6 @@
         </footer>
       </div><!--// #footerWrap-->
     </div><!--// #container-->
+
 </body>
 </html>
