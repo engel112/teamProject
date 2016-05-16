@@ -11,11 +11,14 @@
     <title>Document</title>
     <style>
 /*        #box{width: 700px; height: auto; background-color: #ccc; margin: 0 auto;}*/
+        
+        /*  이 아래거 바꿔보기 -----------------------
         #box>ul{width: 80%; height: 20vw; background-color: #7cc;}
         #box li{width: 20%; height: 17vw; float: left; margin: 5px; background-color: #fff; text-align: center;}
         #box li>a{background-color: #333; line-height: 17vw; color:#fff; padding: 20px;}
         #box li:nth-child(1)>a{background-color: #137; font-size:1.3em;}
         #box li:nth-child(2)>a{background-color: #dda; font-weight: bold;}
+        -------------------------*/
     </style>
     
     <script>
@@ -26,6 +29,29 @@
                      'background-color': '#fcc', 
                      'margin': 0 + ' auto'
                     });
+            $('#box>ul').css({'width': 80 + '%',
+                              'height': 20 + 'vw',
+                              'background-color': '#7cc'
+                             });
+            $('#box li').css({'width': 20 + '%',
+                              'height': 17 + 'vw',
+                              'float': 'left',
+                              'margin': 5,
+                              'background-color': '#fff',
+                              'text-align': 'center',
+                             });
+            $('#box li>a').css({'background-color': '#333',
+                                'line-height': 17 + 'vw',
+                                'color': '#fff',
+                                'padding': 20 + 'px'
+                               });
+            $('#box li:nth-child(1)>a').css({'background-color' : '#137',
+                                             'font-size' : 1.3 + 'em'
+                                        });
+            $('#box li:nth-child(2)>a').css({'background-color': '#dda',
+                                             'font-weight': 'bold'
+                                            });
+            // = $('#box').children('li').eq(1).find('a')
         });
     </script>
     

@@ -1,0 +1,283 @@
+html, body {
+  height: 100%; }
+
+* {
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.5);
+  box-sizing: border-box;
+  transition: all 0.5s; }
+
+#container {
+  width: 100%;
+  height: auto; }
+
+@media screen and (max-width: 479px) {
+  #headBox {
+    width: 100%;
+    height: 100px;
+    background-color: #3a3; }
+    #headBox > h1.logo {
+      width: 45px;
+      height: 45px;
+      float: right;
+      margin-right: 10px;
+      margin-top: 27.5px;
+      background-color: #fff; }
+    #headBox > #gnb {
+      display: none; }
+
+  #section {
+    width: 100%;
+    height: auto;
+    background-color: #fdb; }
+    #section > .banner {
+      width: 100%;
+      height: 83.5073vw;
+      /* 400/479*100 */
+      background-color: #a3d; }
+    #section > .mid_box {
+      width: 100%;
+      height: 83.5073vw;
+      /* 400/479*100 */ }
+      #section > .mid_box > li {
+        width: 50%;
+        height: 50%;
+        float: left;
+        background-color: #dfd; }
+        #section > .mid_box > li:nth-child(odd) {
+          background-color: #5aa; }
+    #section > .ad {
+      width: 100%;
+      height: 20.876826vw;
+      /* 100/479*100 */
+      background-color: #ff0; }
+    #section > .ad2 {
+      width: 100%;
+      height: 41.753653vw;
+      /* 200/479*100 */
+      background-color: #fa0; }
+
+  #footerBox {
+    width: 100%;
+    height: 100px;
+    background-color: #f87; }
+    #footerBox > #footer {
+      width: 50%;
+      height: 100%;
+      background-color: #0af;
+      margin: 0 auto; } }
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  #headBox {
+    width: 100%;
+    height: 100px;
+    background-color: #3a3; }
+    #headBox > h1.logo {
+      width: 45px;
+      height: 45px;
+      float: right;
+      margin-right: 10px;
+      margin-top: 27.5px;
+      background-color: #fff; }
+    #headBox > #gnb {
+      display: none; }
+
+  #section {
+    width: 100%;
+    height: auto;
+    background-color: #fdb; }
+    #section > .banner {
+      width: 100%;
+      height: 62.63048vw;
+      /* 300/479*100 */
+      background-color: #a3d; }
+    #section > .mid_box {
+      width: 100%;
+      height: 83.5073vw;
+      /* 400/479*100 */ }
+      #section > .mid_box > li {
+        width: 25%;
+        height: 100%;
+        float: left;
+        background-color: #dfd; }
+        #section > .mid_box > li:nth-child(odd) {
+          background-color: #5aa; }
+    #section > .ad {
+      width: 100%;
+      height: 20.876826vw;
+      /* 100/479*100 */
+      background-color: #ff0; }
+    #section > .ad2 {
+      width: 100%;
+      height: 41.753653vw;
+      /* 200/479*100 */
+      background-color: #fa0; }
+
+  #footerBox {
+    width: 100%;
+    height: 100px;
+    background-color: #f87; }
+    #footerBox > #footer {
+      width: 50%;
+      height: 100%;
+      background-color: #0af;
+      margin: 0 auto; } }
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  #headBox {
+    width: 100%;
+    height: 150px; }
+    #headBox > h1.logo {
+      width: 100px;
+      height: 100%;
+      background-color: #3a3;
+      float: left; }
+    #headBox > #gnb {
+      width: calc(100% - 100px);
+      height: 100%;
+      background-color: #ff6;
+      float: left; }
+
+  #section {
+    width: 100%;
+    height: auto;
+    background-color: #fdb; }
+    #section > .banner {
+      width: 100%;
+      height: 39.0625vw;
+      /* 300/768*100 */
+      background-color: #a3d; }
+    #section > .mid_box {
+      width: 100%;
+      height: 52.083333vw;
+      /* 400/768*100 */ }
+      #section > .mid_box > li {
+        width: 25%;
+        height: 100%;
+        float: left;
+        background-color: #dfd; }
+        #section > .mid_box > li:nth-child(odd) {
+          background-color: #5aa; }
+    #section > .ad {
+      width: 100%;
+      height: 13.020833vw;
+      /* 100/768*100 */
+      background-color: #ff0; }
+    #section > .ad2 {
+      width: 100%;
+      height: 26.041666vw;
+      /* 200/768*100 */
+      background-color: #fa0; }
+
+  #footerBox {
+    width: 100%;
+    height: 100px;
+    background-color: #f87; }
+    #footerBox > #footer {
+      width: 100px;
+      height: 100%;
+      background-color: #0af;
+      float: left; } }
+@media screen and (min-width: 960px) and (max-width: 1279px) {
+  #headBox {
+    width: 100%;
+    height: 150px; }
+    #headBox > h1.logo {
+      width: 100px;
+      height: 100%;
+      background-color: #3a3;
+      float: left; }
+    #headBox > #gnb {
+      width: calc(100% - 100px);
+      height: 100%;
+      background-color: #ff6;
+      float: left; }
+
+  #section {
+    width: 100%;
+    height: auto;
+    background-color: #fdb; }
+    #section > .banner {
+      width: 100%;
+      height: 46.875vw;
+      /* 450/960*100 */
+      max-height: 600px;
+      background-color: #a3d; }
+    #section > .mid_box {
+      width: 100%;
+      height: 62.5vw;
+      /* 600/960*100 */
+      max-height: 900px; }
+      #section > .mid_box > li {
+        width: 25%;
+        height: 100%;
+        float: left;
+        background-color: #dfd; }
+        #section > .mid_box > li:nth-child(odd) {
+          background-color: #5aa; }
+    #section > .ad {
+      display: none; }
+    #section > .ad2 {
+      display: none; }
+
+  #footerBox {
+    width: 100%;
+    height: 100px;
+    background-color: #f87; }
+    #footerBox > #footer {
+      width: 10.416666vw;
+      /* 100/960*100 */
+      height: 100%;
+      background-color: #0af;
+      float: left; } }
+@media screen and (min-width: 1280px) {
+  #headBox {
+    width: 150px;
+    height: calc(100% - 100px);
+    float: left; }
+    #headBox > h1.logo {
+      width: 100%;
+      height: 100px;
+      background-color: #3a3; }
+    #headBox > #gnb {
+      width: 100%;
+      height: calc(100% - 100px);
+      background-color: #ff6; }
+
+  #section {
+    width: calc(100% - 150px);
+    height: auto;
+    background-color: #fdb;
+    float: right; }
+    #section > .banner {
+      width: 100%;
+      height: 46.875vw;
+      /* 600/1280*100 */
+      background-color: #a3d; }
+    #section > .mid_box {
+      width: 100%;
+      height: 70.3125vw;
+      /* 900/1280*100 */
+      max-height: 900px; }
+      #section > .mid_box > li {
+        width: 25%;
+        height: 100%;
+        float: left;
+        background-color: #dfd; }
+        #section > .mid_box > li:nth-child(odd) {
+          background-color: #5aa; }
+    #section > .ad {
+      display: none; }
+    #section > .ad2 {
+      display: none; }
+
+  #footerBox {
+    width: 100%;
+    height: 100px;
+    background-color: #f87;
+    float: right; }
+    #footerBox > #footer {
+      width: 10.416666vw;
+      /* 100/960*100 */
+      height: 100%;
+      background-color: #0af;
+      float: left; } }
+
+/*# sourceMappingURL=160511.css.map */
