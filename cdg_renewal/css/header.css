@@ -20,11 +20,8 @@ button:hover{background-color: #933637; color:#f4f4f2;}
     #menu>a{font-size: 1.625rem; color:#c5c5c5; line-height: 80px;}
     #menu>a:hover{color:#933637;}
     
-<<<<<<< HEAD
-#submenuWrap{width: 100%; height: 100%; background-color: rgba(0,0,0,0.7); position: fixed; z-index: 600; top: 80px;}
-=======
+
 #submenuWrap{width: 100%; height: 100%; background-color: rgba(0,0,0,0.7); position: fixed; z-index: 100; top: 80px; left: 0;}
->>>>>>> origin/master
 #submenu{width: 760px; height: 100%; background-color: #335161; padding: 100px; margin: 0 auto; background-image: url(../img/pattern2.jpg); background-blend-mode: color-burn;}
     #submenu>dl{width: 20%; height: 50%; margin-bottom: 30px; float: left;}
     #submenu>dl>dt, #submenu>dl>dd>a{width: 100%; color:#f4f4f2;}
