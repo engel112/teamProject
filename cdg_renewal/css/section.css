@@ -1,54 +1,52 @@
 /* section */
 
-#side_button{position:fixed; top:50%; left: 50%; margin-top: -17px; margin-left:500px; width: 14px; height: 114px; z-index:500;}
+#side_button{position:fixed; top: calc(50% - 47px); left: 50%; margin-left:500px; width: 14px; height: 94px; z-index:400;}
 #side_button>ul{width: 100%; height: 100%;}
 #side_button>ul>li{width: 100%; height:14px; margin-bottom: 12px; float: left;}
 #side_button>ul>li:last-child{margin: 0;}
 #side_button>ul>li>a{width: 100%; height: 100%; border-radius: 14px; background: rgba(200,200,200,.7); display: block; transition: all .3s;}
 #side_button>ul>li>a:hover{background-color: #933637;}
 
-section{width: 100%; height: 2400px; background-color: #eee; padding-top: 80px;}
-section>article{width: 100%; height: calc(100% / 4);}
+
+section{width: 100%; height: auto; background-color: #eee; float: left;}
+section>article{width: 100%; height: 620px; padding: 80px 0;}
 section>article>div{width: 960px; height: 100%; margin: 0 auto;}
+section>#article01Wrap{background-image:url(../img/section/mainbg.JPG); background-repeat: no-repeat; background-position: center 78%; background-size: 100%;}
 section>#article02Wrap{background-color: #335161; background-image: url(../img/pattern2.jpg); background-blend-mode: color-burn;}
 section>#article03Wrap{background-color: #f4f4f2; background-image: url(../img/pattern2.jpg); background-blend-mode: darken;}
 section>#article04Wrap{background-color: #fff; background-image: url(../img/pattern2.jpg); background-blend-mode: color-burn;}
 
-div>.subject{width: 100%; font-size: 2rem; font-weight: bold; line-height: 2rem; color: #333; letter-spacing: -0.125rem; text-align: center;display: block;}
-div>.bar{width: 50px; height: 3px; background-color: #c5c5c5; margin: 24px calc(50% - 25px); display: block;}
+
+div>.subject{width: 100%; font-size: 2rem; font-weight: bold; line-height: 2rem; color: #333; letter-spacing: -0.125rem; text-align: center; display: block;}
+div>.bar{width: 50px; height: 3px; background-color: #c5c5c5; margin: 28px calc(50% - 25px); display: block;}
 
 /* 창덕궁 */
     #article01{width: 100%; overflow: hidden; position: relative;}
     #article01>span{width: 100%; position: absolute; top: 40%; z-index:100; text-align: center; font-size:1.2rem; letter-spacing: 5px; color:#fff;}
     #article01>span>em{width: 100%; font-size: 5.625rem; color:#fff;}
-    #article01>ul{width: 300%; height: 100%; margin-left: -100%;}
-    #article01>ul>li{width: 100%; height:100%; float: left;}
-    #article01>ul>li:nth-child(1){background-color: #fad; margin-left:-100%;}
-    #article01>ul>li:nth-child(2){background-image:url(../img/section/mainbg.JPG); background-repeat: no-repeat; background-position: center 78%; background-size: 2000px;}
-    #article01>ul>li:nth-child(3){background-color: #ffd;}
-    #article02{width: 960px; overflow: hidden; position: relative;}
 
 /* 창덕궁소개 */
-
-#article02>div {width: 50%; height: 100%; float: left;}
-#article02>.art02_left {background-image: url(../img/section/img.png); background-position: center center; background-repeat: no-repeat;}
-    #article02>.art02_right>.art02_right_inbox {width: calc(80% - 80px); height: calc(80% - 80px); background-color: #fff; margin-top: 10%; margin-left: 10%; padding: 40px;}
-    #article02>.art02_right>.art02_right_inbox>.text {width: 100%; height: 296px; font-size: 0.875rem; line-height: 1.5rem; overflow-y: scroll; padding-right: 50%;}
+#article02{width: 960px; overflow: hidden; position: relative;}
+#article02>div {height: calc(100% - 64px); float: left; padding: 32px 0;}
+#article02>.art02_left {width: 60%; background-image: url(../img/section/img.png); background-position: center center; background-repeat: no-repeat; background-size: auto calc(100% - 64px);}
+    #article02>.art02_right{width: 40%;}
+    #article02>.art02_right>.art02_right_inbox {width: calc(100% - 80px); height: calc(100% - 80px); background-color: #fff; padding: 40px;}
+    #article02>.art02_right>.art02_right_inbox>.text {width: 100%; height: 80%; font-size: 0.875rem; line-height: 1.5rem; overflow-y: scroll; text-indent: 4px; padding-right: 50%;}
 
 /* 찾아오시는 길 */
 #article03{height: calc(100% - 32px); padding: 0 32px;}
 #article03>.subject{margin-top: 32px;}
-#article03>.map{width: 860px; height: 300px; background-image: url(../img/section/map.png); margin: 0px 50px 16px;}
+#article03>.map{width: 100%; height: 320px; margin-bottom: 20px; border: 1px solid #c5c5c5;}
 #article03>.map_info{width:660px; margin:0 160px;}
-    #article03>.map_info>li{float: left; line-height:1.2rem;}
+    #article03>.map_info>li{width: 100%; float: left; line-height: 1.25rem}
     #article03>.map_info>.info_icon{margin-right: 10px; color: #666; font-size: 1rem;}
-    #article03>.map_info>.info_txt{margin-right: 10px;margin-bottom: 10px;}
+    #article03>.map_info>.info_txt{margin-right: 50%;margin-bottom: 10px;}
     #article03>.map_info>.info_etc {font-size:0.875rem; margin-top: 10px;}
 
 /* 관람 시간 및 요금 */
-#article04{background-color: inherit; height: calc(100% - 32px); padding: 0 32px;}
+#article04{height: calc(100% - 32px); padding: 0 32px;}
 #article04>.subject{margin-top: 32px;}
-#article04>.btn_box{width: 256px; height: 40px; margin-left: 370px; margin-bottom: 30px;}
+#article04>.btn_box{width: 256px; height: 40px; margin-left: 370px; margin-bottom: 20px;}
     #article04>.btn_box button {background-color: #fff; width: 108px; height: 40px; color: #333; line-height: 1.25rem; background-image: url(../img/section/viewbtn.png); background-repeat: no-repeat; cursor: pointer; margin-right: 5px; float: left;}
     #article04>.btn_box button:hover {color: #f4f4f2; background-image: url(../img/section/viewbtn_on.png);}
 #article04>dl{width: 717px; text-indent: 10px; text-align: center; margin-left: 120px; border-top: 1px solid #c5c5c5; border-left: 1px solid #c5c5c5;}
@@ -57,7 +55,7 @@ div>.bar{width: 50px; height: 3px; background-color: #c5c5c5; margin: 24px calc(
 #article04>.timetable{height:131px; margin-bottom: 20px;}
         #article04>.timetable>dt{width: 238px;}
         #article04>.timetable>dd{width: 238px;}
-#article04>.price{height:131px; margin-bottom: 20px;}
+#article04>.price{height:131px; margin-bottom: 30px;}
         #article04>.price>dt{width: 200px;}
         #article04>.price>dd{width: 515px; text-align: left; text-indent: 20px;}
 .art04_btn_more{width: 130px; height: 34px; background-color: #933637; text-align: center; line-height: 2.125rem;; float: right; margin-right:122px; cursor: pointer; color:#f4f4f2;}
