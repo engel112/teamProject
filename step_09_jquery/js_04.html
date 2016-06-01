@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko_kr">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Document</title>
+	<script src="./js/jquery/jquery-1.12.3.min.js"></script>
+	<script src="./js/jquery/jquery-migrate-1.3.0.min.js"></script>
+	<script src="./js/jquery/jquery-ui.min.js"></script>
+	<link rel="stylesheet" href="./css/lib/reset.css" />
+	<link rel="stylesheet" href="./css/js_04.css" />
+	<style></style>
+	<script>
+        $(document).ready(function(){
+            var menu = $('.menu');
+                $this = $(this);
+            menu.find('dt').on('click', function(){
+               menu.find('dd').slideUp(500);
+               $(this).next('dd').stop().slideToggle(500)
+                    .animate({'background-color': '#fa0'},500);
+                
+        });            
+        });
+    </script>
+</head>
+<body>
+	<div class="container">
+		<div id="header">
+       <h1>menu_만들기</h1>
+       <div class="menu">
+           <dl>
+               <dt>제목</dt>
+               <dd>
+                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, maiores ea sed assumenda suscipit, est non quibusdam? Laboriosam, nam, velit voluptate dignissimos incidunt itaque cumque, architecto ipsum repellendus natus consectetur.
+               </dd>
+               <dt>제목2</dt>
+               <dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet quaerat laborum officiis error explicabo expedita minus, illo nulla iusto, quas inventore tempore maxime! Porro officiis consequatur, eligendi magni in dolor.</dd>
+               <dt>제목3</dt>
+               <dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti aliquam facilis dolores, consequuntur. Totam nostrum aspernatur laborum sed magni esse cupiditate iusto quisquam, reiciendis voluptatem libero, cum quasi accusantium illum!</dd>
+           </dl>
+       </div>
+        </div>
+		<div id="aside">aside</div>
+		<div id="content">content</div>
+		<div id="footer">footer</div>
+	</div>
+</body>
+</html>

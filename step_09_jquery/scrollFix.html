@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="./css/lib/reset.css" />
+    <link rel="stylesheet" href="./css/scrollFix.css">
+    <script src="./js/scrollFix.js"></script>
+    <script src="./js/jquery/jquery-1.12.3.min.js"></script>
+    <script src="./js/jquery/jquery-migrate-1.3.0.min.js"></script>
+    <script src="./js/jquery/jquery-ui.min.js"></script>
+    <title>scrollFix</title>
+    <style>
+    </style>
+    <script>
+        $(document).ready(function(){
+            $(window).on('scroll', function(){
+            var sc = $(this).scrollTop(),
+                win_h = $(window).height(),
+                head_h = $('#header').height(),
+                head_top = $('#header').offset().top,
+                hope_h = win_h - head_h;
+            if(sc >= hope_h - 20){
+                $('#header').addClass('scroll');
+            }else{
+                $('#header').removeClass('scroll');
+            }
+        })
+                });
+    </script>
+</head>
+<body>
+    <div id="header">header</div>
+    <div id="article">article</div>
+    <div id="section">section</div>
+    <div id="footer">footer</div>
+</body>
+</html>

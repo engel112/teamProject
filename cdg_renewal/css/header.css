@@ -1,3 +1,8 @@
+@media screen and (max-width: 480px){}
+@media screen and (min-width: 481px) and (max-width: 768px){}
+@media screen and (min-width: 769px) and (max-width: 1024px){}
+@media screen and (min-width: 1025px){
+    
 #containter{width: 100%; height: auto;}
 header{margin: 0 auto; width: 960px; height: 100%;}
 button{background-color: #c5c5c5; color:#335161; cursor: pointer;}
@@ -6,7 +11,7 @@ button:hover{background-color: #933637; color:#f4f4f2;}
 
 /* header */
 
-#headerWrap{width: 100%; height: 80px; background-color: #fff; position: fixed; z-index: 200; box-shadow: 0px 0px 2px 0px #666; top:0; left:0;}
+#headerWrap{width: 100%; height: 80px; background-color: #fff; position: fixed; z-index: 500; box-shadow: 0px 0px 2px 0px #666; top:0; left:0;}
 #header{width: 940px; height: 100%; padding: 0 10px;}
     h1{width: 182px; height: 100%; margin-right: 60px; float: left;}
         h1>a{background-image: url(../img/logo.jpg); background-position: center center;}
@@ -29,3 +34,7 @@ button:hover{background-color: #933637; color:#f4f4f2;}
     #submenu>dl>dd{width: 100%; height: 30px; font-size:0.9rem; line-height: 30px; text-indent: 5px;}
     #submenu>dl>dd>span{width: 60px; height: 12px; border-bottom: 2px solid #933637; display: block; margin-left: 5px;}
     #submenu>dl>dd>a:hover{font-weight: bold;}
+
+    
+    
+    }

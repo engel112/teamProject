@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/nanummyeongjo.css" />
     <link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css" />
     <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/s_nav.css" />
     
     <!--[if lte IE 9]>
     <script src="./js/dist/html5shiv.min.js"></script>
@@ -21,6 +22,7 @@
     <script src="./js/jquery/jquery-1.12.3.min.js"></script>
     <script src="./js/jquery/jquery-migrate-1.3.0.min.js"></script>
     <script src="./js/jquery/jquery-ui.min.js"></script>
+    <script src="./js/sidenav.js"></script>
 
     <title>창덕궁 - 세계문화유산</title>
     <style>
@@ -28,13 +30,17 @@
     </style>
         <script>
         $(function(){
+          sidenav();
             var $menu = $('#menu');
             var $submenu = $('#submenuWrap');
             
             $submenu.hide();
-            $menu.on('click', function(){
+            $menu.on('click', function(e){
+                e.preventDefault();
                 $submenu.stop().fadeToggle(300);
-                
+            });
+            $submenu.on('click', function(){
+                $submenu.stop().fadeOut(300);
             });
         });
     </script>
@@ -48,8 +54,8 @@
         <nav id="gnb">
            <h2>메인 메뉴</h2>
             <ul>
-                <li><a href="#">창덕궁 이야기</a></li>
-                <li><a href="#">관람 안내</a></li>
+                <li><a href="index.html" target="_self">창덕궁 이야기</a></li>
+                <li><a href="info.html" target="_self">관람 안내</a></li>
                 <li><a href="#">관람 예약</a></li>
                 <li><a href="#">참여 공간</a></li>
                 <li><a href="#">자료실</a></li>
@@ -64,20 +70,19 @@
                    <dt>창덕궁 이야기</dt>
                     <dd><span><!--구분바--></span></dd>
                     <dd><a href="#">창덕궁 인사말</a></dd>
+                    <dd><a href="#">세계유산 창덕궁</a></dd>
                     <dd><a href="#">창덕궁 소개</a></dd>
                     <dd><a href="#">창덕궁 역사</a></dd>
                     <dd><a href="#">창덕궁 위치</a></dd>
-                    <dd><a href="#">창덕궁 사계</a></dd>
-                    <dd><a href="#">세계유산 창덕궁</a></dd>
                 </dl>
                 <dl>
                    <dt>관람 안내</dt>
                     <dd><span><!--구분바--></span></dd>
-                    <dd><a href="#">관람 코스</a></dd>
-                    <dd><a href="#">관람 시간 및 요금</a></dd>
-                    <dd><a href="#">편의시설 안내</a></dd>
-                    <dd><a href="#">주변 둘러보기</a></dd>
-                    <dd><a href="#">관람객 권리·협조사항</a></dd>
+                    <dd><a href="info.html#article01Wrap" target="_self">관람 코스</a></dd>
+                    <dd><a href="info.html#article02Wrap">창덕궁 사계</a></dd>
+                    <dd><a href="info.html#article03Wrap">관람 시간 및 요금</a></dd>
+                    <dd><a href="info.html#article04Wrap">관람객 권리·협조사항</a></dd>
+                    <dd><a href="info.html#article05Wrap">편의시설 안내</a></dd>
                 </dl>
                 <dl>
                    <dt>관람 예약</dt>
@@ -113,12 +118,14 @@
 <!--        section ------------------------------------------------------------------->
          <div id="side_button">
         <ul>
-            <li><a href="#article01Wrap"></a></li>
-            <li><a href="#article02Wrap"></a></li>
-            <li><a href="#article03Wrap"></a></li>
-            <li><a href="#article04Wrap"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
         </ul>
     </div><!--// #side_button-->
+       
+       
         <section id="sectionWrap">
             <article id="article01Wrap">
             <div id="article01">
@@ -130,14 +137,14 @@
             <article id="article02Wrap">
             <div id="article02">
             <h2>창덕궁 소개</h2>
-                <div class="art02_left"><span class="me_hidden">동궐도</span></div>
+                <div class="art02_left"><span>동궐도</span></div>
                 <div class="art02_right">
                    <div class="art02_right_inbox">
                     <span class="subject">창덕궁 소개</span>
                     <span class="bar"></span>
                     <p class="text">
                 창덕궁은 1405년 (태종 5년) 조선왕조의 이궁으로 지은 궁궐이다. 경복궁의 동쪽에 위치한다 하여 이웃한 창경궁과 더불어 동궐이라 불렀다 임진왜란으로 모든 궁궐이 불에 타자 광해군 때에 다시 짓고 고종이 경복궁을 중건하기까지 정궁 역할을 하였다.
-조선의 궁궐 중 <strong>가장 오랜 기간 동안 임금들이 거처했던 궁궐</strong>이다. 경복궁의 주요 건물이 좌우대칭의 일직선상에 놓여 있다면 창덕궁은 산자락을 따라 건물들을 골짜기에 안기도록 배치하여 <strong>한국 궁궐건축의 비정형적 조형미를 대표</strong>하고 있다. 또한 비원으로 잘 알려진 창덕궁 후원은 다양한 정자, 연못, 수목, 괴석이 어우러진 아름다운 곳이다. 현재 남아있는 조선의 궁궐 중 그 원형이 가장 잘 보존된 창덕궁은 자연과의 조화로운 배치가 탁월한 점에서 1997년 유네스코 세계유산으로 등록되었다. 
+조선의 궁궐 중 <strong class="red">가장 오랜 기간 동안 임금들이 거처했던 궁궐</strong>이다. 경복궁의 주요 건물이 좌우대칭의 일직선상에 놓여 있다면 창덕궁은 산자락을 따라 건물들을 골짜기에 안기도록 배치하여 <strong class="red">한국 궁궐건축의 비정형적 조형미를 대표</strong>하고 있다. 또한 비원으로 잘 알려진 창덕궁 후원은 다양한 정자, 연못, 수목, 괴석이 어우러진 아름다운 곳이다. 현재 남아있는 조선의 궁궐 중 그 원형이 가장 잘 보존된 창덕궁은 자연과의 조화로운 배치가 탁월한 점에서 1997년 유네스코 세계유산으로 등록되었다. 
                     </p>
                 </div>
                 </div>
@@ -201,7 +208,7 @@
                     <dt>무료</dt>
                     <dd>상세 페이지 참조</dd>
                 </dl>
-                <a href="#"><div class="art04_btn_more">자세히 보기<i class="fa fa-angle-right" aria-hidden="true"><!--화살표--></i></div></a>
+                <a href="info.html#article03Wrap"><div class="art04_btn_more">자세히 보기<i class="fa fa-angle-right" aria-hidden="true"><!--화살표--></i></div></a>
                 
             </div><!--// #article04-->
             </article>
@@ -223,9 +230,9 @@
                 <fieldset class="family">
                     <legend>패밀리사이트</legend>
                     <select name="familysite" value="패밀리사이트">
-                        <option value="문화재청">문화재청</option>
-                        <option value="국민신문고">국민신문고</option>
-                        <option value="문화유산채널">문화유산채널</option>
+                        <option value="http://www.cha.go.kr/">문화재청</option>
+                        <option value="http://m.epeople.go.kr/main/main.jsp">국민신문고</option>
+                        <option value="http://www.heritagechannel.tv/">문화유산채널</option>
                     </select>
                     <button type="button" name="go" value="go">GO</button>
                 </fieldset>
@@ -245,8 +252,8 @@
                 <li class="copy">COPYRIGHT 2004-2008 문화재청 창덕궁 관리소. ALL RIGHTS RESERVED.</li>
             </ul>
             <ul class="link_btn">
-                <li class="fa fa-envelope" aria-hidden="true"><span class="me_hidden">mail</span></li>
-                <li class="fa fa-twitter" aria-hidden="true"><span class="me_hidden">twitter</span></li>
+                <li><a href="https://www.e-minwon.go.kr/webs/menu.jsp?menu_id=civl02" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i><span class="me_hidden">mail</span></a></li>
+                <li><a href="https://twitter.com/changdeok11" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i><span class="me_hidden">twitter</span></a></li>
             </ul>
             <form action="" method="get">
                 <fieldset class="language">
