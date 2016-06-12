@@ -20,34 +20,34 @@ caption{width: 100%; height: 1.25rem; margin-bottom: 10px; color: $mainColor2; f
     
     
 section{width: 100%; height: auto; margin-top: 80px;
-    >article{width: 960px; height: 100%; margin: 0 auto; 
+    >article{width: 60rem; height: 100%; margin: 0 auto; 
         &#article01Wrap{width: 100%; height: 740px;
-            >#article01{width: 960px; height: 100%; margin: 0 auto;}
+            >#article01{width: 60rem; height: 100%; margin: 0 auto;}
         }
         &#article02Wrap{width: 100%; height: 760px;}
-        &#article03Wrap{width: 100%; padding: 80px 0; background-color: $subColor2; background-image: url(../img/pattern2.jpg); background-blend-mode: darken;
-          >#article03{width: 960px; height: 100%; margin: 0 auto;}
+        &#article03Wrap{width: 100%; padding: 80px 0; background-image: $patternW;
+          >#article03{width: 60rem; height: 100%; margin: 0 auto;}
           }
-        &#article04Wrap{width: 100%;  padding: 60px 0; background-color: $mainColor; background-image: url(../img/pattern2.jpg); background-blend-mode: color-burn;
-            >#article04{width: 860px; margin: 0 auto; height: 100%; padding: 40px 50px; background-color: $subColor2; background-image: url(../img/pattern2.jpg); background-blend-mode: darken;
+        &#article04Wrap{width: 100%;  padding: 60px 0; background-image: $patternB;
+            >#article04{width: 860px; margin: 0 auto; height: 100%; padding: 40px 50px; background-image: $patternW;
                 &::after{content:""; display: block; clear: both;}
                 }
           }
         &#article05Wrap{width: 100%; height: 760px; padding-top: 80px;
-          >#article05{width: 960px; height: 100%; margin: 0 auto;}
+          >#article05{width: 60rem; height: 100%; margin: 0 auto;}
           }
     }
 }// section
     
   
   /* 미니맵 -------------------------------------------------*/
-    #article01Wrap>.course_bg{width: 100%; height: 100%; background-repeat: no-repeat; background-position: center; background-size: 100%; background-image: url(../img/section/01_don.jpg); transition: background-image .2s;
+    #article01Wrap>.course_bg{width: 100%; height: 100%; background-repeat: no-repeat; background-position: center; background-size: 120%; background-image: url(../img/section/01_don.jpg); transition: background-image .2s;
         }// .course_bg
   
-    #article01{width: 960px; height: 100%; top: 0; left: calc(50% - 480px); position: relative; z-index: 200;
+    #article01{width: 60rem; height: 100%; top: 0; left: calc(50% - 480px); position: relative; z-index: 200;
         >#memo{width: 366px; height: 144px; background-color: rgba(0,0,0,.8); padding: 14px; overflow: hidden; position: absolute; left: 0; bottom: 0; transition: height .4s ease;
             >.memo_nav{width: 100%; height: 40px; margin-bottom: 16px;
-            >span{height: 100%; float: left; display: block; font-size: 2rem; color:$white; float: left; border-bottom: 2px solid $mainColor2; font-weight: bolder; line-height: 40px;}
+            >span{height: 100%; display: block; font-size: 2rem; color:$white; float: left; border-bottom: 2px solid $mainColor2; font-weight: bolder; line-height: 40px;}
             >ul{float: right; height: 100%;
                 >li{float: left; width: 2rem; text-align: center; height: 100%;
                     >a{font-size: 2.4rem; line-height: 40px; color: $mainColor2;}
@@ -101,13 +101,13 @@ section{width: 100%; height: auto; margin-top: 80px;
     .season_Box{position: relative; overflow: hidden;
         >ul{width: 65%; height: calc(100% - 30px); padding-top: 30px; padding-left: 30px; background-image: linear-gradient(90deg, rgba(#000, 0), rgba(#000, .6) 20%); position: absolute; z-index: 100; top: 0; right: -65%;
             >li{width: 24%; height: 20%; margin: 1%; background-color: #fff; float: left; border: 1px solid #aaa; background-repeat: no-repeat; background-position: center; background-size: auto;
-                >a{width: 100%; height: 100%; display: block;}
+                >a{width: 100%; height: 100%; display: block; font-size: 0;}
             }
         }        
     }// .season_Box
     
-    .season_fullbox{width: 100vw; height: 100vw; position: fixed; top: 0; left: 0; background-color: rgba(#000, 0.7); z-index: 500; display: none;
-        >img{width: auto; height: auto; margin: 0 auto; top:20%; left: 40%; border: 1px solid #fff; box-sizing: border-box; position: fixed;}
+    .season_fullbox{width: 100%; height: 100vw; position: fixed; top: 0; left: 0; background-color: rgba(#000, 0.7); z-index: 500; display: none;
+        >img{width: 500px; height: auto; top:30%; left: calc(50% - 250px); border: 1px solid #fff; box-sizing: border-box; position: fixed;}
         >button{width: 20px; height: 20px; color:#333;}
     }
     

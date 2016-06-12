@@ -1,93 +1,84 @@
-body {
-  font-family: 'Open Sans', sans-serif;
-}
+@charset "UTF-8";
+html, body { position: relative; height: 100%; }
 
-* {
-  /* Ensure sane sizing of all elements */
-  box-sizing: border-box;
-}
+/* 공통 */
+.w960 { width: 960px; height: auto; margin: 0 auto; }
 
-.color-list {
-  display: flex;
-  /* 
-    On small displays we want each .color stacked.
-    Flexbox let's us determine stacking direction via
-    flex-direction: column;
-  */
-  flex-direction: column;
-  height: 100vh;
-}
+.m_title, .m_section { height: 100%; float: left; }
 
-.color {
-  /*
-    Each .color is also a flex item. We do this so that we have reasonable
-    distribution of space between elements. We use flex-direction so that
-    flexbox knows which way to position each element (in this case, vertical).
-  */
-  display: flex;
-  flex-direction: column;
-  /*
-    .color can grow but not shrink (we want space for first three elements).
-    10em is enough space to see name, hsl, and hex values. 
-    Try shrinking vertically on a small display.
-  */
-  flex: 1 0 10em;
-  box-shadow: 0 0 30px #424242;
-  /* Handles any clipping/overflow issues on transition */
-  overflow: hidden;
-  padding: 1em;
-  color: white;
-  transition: flex-basis 500ms ease-in-out;
-}
+.m_title { width: 35%; background-color: #fd2; }
+.m_title > strong { width: 100%; height: auto; color: #333; font-weight: bold; font-size: 4rem; text-align: center; display: block; font-family: 'Patrick Hand', cursive; }
 
-.color:hover {
-  /*
-    Change the flex-basis so that we know what
-    size to transition to on hover. Arbitrary,
-    based on our design/content.
-  */
-  flex-basis: 20em;
-}
+.m_section { width: 65%; background-color: #fff; }
 
-.color:hover .details {
-  opacity: 1;
-}
+.more > a { background-color: #333; color: #fff; width: 50px; display: block; padding: 0.5rem; text-align: center; float: right; }
 
-.name {
-  font-size: 1.2em;
-  font-weight: 600;
-}
+a { width: auto; height: 100%; display: block; }
 
-.details {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  opacity: 0;
-  transition: opacity 500ms ease-in-out;
-}
+a:hover { color: #fd2; }
 
-.details li {
-  font-size: 1em;
-  line-height: 2em;
-}
+small { font-size: 0.75rem; color: #ccc; }
 
-@media (min-width: 600px) {
-  .color-list {
-    /*
-      Change the direction so that each .color
-      aligns horizontally
-    */
-    flex-direction: row;
-  }
-  .color {
-    /*
-      No scrollbars on mobile
-    */
-    flex-shrink: 1;
-  }
-}
+/* 본문 */
+#container { width: 100%; height: auto; overflow: hidden; }
 
+#header { width: 100%; height: 40px; padding: 10px 0; background-color: #fff; position: absolute; bottom: 0; left: 0; z-index: 200; }
 
-/* Fonts, OK at the end for this demo! */
+#section { width: 100%; height: auto; }
+#section > article { width: 100%; height: 100vh; }
 
-@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600);
+#footer { width: 100%; height: 80px; background-color: #333; padding: 20px 0; }
+
+#header > div > nav { width: 100%; height: 100%; }
+#header > div > nav > h1 { width: 300px; height: 100%; float: left; }
+#header > div > nav > ul { width: auto; height: 100%; float: right; }
+#header > div > nav > ul > li { width: auto; height: 100%; margin-right: 4px; float: left; }
+#header > div > nav > ul > li:last-of-type { margin-right: 0; }
+#header > div > nav > ul > li > a { font-size: 1.25rem; text-align: center; line-height: 40px; padding: 0 10px; }
+#header > div > nav > ul > li > a:hover { color: #fd2; }
+#header.scroll { position: fixed; top: 0; }
+
+/* ---------- 맨 위 ---------- */
+.main { background-size: 100vw; width: 100vw; height: 100vh; background-image: url(../img/mainbg.jpg); background-repeat: no-repeat; position: fixed; top: 0; left: 0; z-index: -100; }
+
+/* ---------- me ---------- */
+.me { position: relative; }
+.me > span { width: 100%; font-size: 8rem; text-align: center; font-family: 'Patrick Hand', cursive; color: #333; display: block; position: absolute; top: 30%; }
+.me > ul { float: right; width: 200px; height: auto; padding: 10px 20px; text-align: center; background-color: rgba(51, 51, 51, 0.9); position: absolute; bottom: calc(50% - 80px); right: calc(50% - 100px); transition: all 0.3s; }
+.me > ul:hover { background-color: #000; }
+.me > ul > li { width: 100%; color: #fff; }
+
+/* ---------- 이력서 ---------- */
+.resume .m_section > ul { width: 60%; margin-left: 20%; }
+.resume .m_section > ul > li { width: 100%; height: auto; }
+.resume .m_section > ul > .resume_txt { width: calc(100% - 2rem); padding: 1rem; background-color: #666; transition: all 0.3s; color: #fff; margin-bottom: 10px; }
+.resume .m_section > ul > .resume_txt:hover { background-color: #333; }
+
+/* ---------- 포트폴리오 ---------- */
+.portfolio > div { width: 50%; height: 100%; float: left; position: relative; background-size: 100%; }
+.portfolio > div > ul { position: absolute; width: 70%; height: auto; background-color: #fff; left: 0; bottom: 0; padding: 2rem 15%; }
+.portfolio > div > ul > li { float: left; width: 100%; height: auto; padding: 2px 0; }
+.portfolio .port1 { background-image: url(../img/mainbg.jpg); transition: all 0.3s; }
+.portfolio .port1:hover { background-size: 110%; }
+.portfolio .port2 { background-color: #f70; }
+.portfolio .pf_title { font-weight: bold; text-align: center; font-size: 1.5rem; }
+.portfolio .pf_bar { width: 8%; margin: 0 46%; border-bottom: 3px solid #ccc; }
+
+/* ---------- 연락처 ---------- */
+.contact { background-color: #ffa; }
+.contact .m_section > dl { width: 60%; height: auto; padding: 0 20%; }
+.contact .m_section > dl > dt, .contact .m_section > dl dd { height: auto; padding: 6px 0; float: left; text-indent: 1rem; }
+.contact .m_section > dl > dt { width: 20%; min-width: 110px; background-color: #333; color: #fff; }
+.contact .m_section > dl > dd { width: 80%; }
+
+#footer > div { height: 100%; }
+#footer > div ul .top { height: 100%; }
+#footer > div ul { width: 200px; float: left; }
+#footer > div ul > li { width: 100%; height: 20px; line-height: 20px; color: #ccc; }
+#footer > div ul > li > a { color: #ccc; }
+#footer > div ul > li > a:hover { color: #fd2; }
+#footer > div .top { width: 80px; float: right; background-color: #666; }
+#footer > div .top > a { line-height: 80px; text-align: center; color: #fff; }
+#footer > div .top > a:hover { color: #fd2; }
+
+/*# sourceMappingURL=index.css.map */

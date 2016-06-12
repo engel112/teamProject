@@ -1,0 +1,77 @@
+//index_pcfull.scss
+
+@media screen and (min-width: 1025px){
+#containter{width: 100%; height: auto;}  
+  
+  section{width: 100%; height: auto; float: left;
+    >article{width: 100%; height: 620px; padding: 80px 0;
+      >div{width: 960px; height: 100%; margin: 0 auto;}
+      }
+    >#article01Wrap{background-image:url(../img/section/mainbg.JPG); background-repeat: no-repeat; background-position: center 78%; background-size: 120%; background-color: $mainColor;}
+    >#article02Wrap{background-image: $patternB;}
+    >#article03Wrap{background-image: $patternW;}
+    >#article04Wrap{background-color: $white;}
+    }// section
+
+
+.subject{width: 100%; font-size: 2rem; font-weight: bold; line-height: 2rem; color: $black; letter-spacing: -0.125rem; text-align: center; display: block;}
+.bar{width: 50px; height: 3px; background-color: $subColor1; margin: 28px calc(50% - 25px); display: block;}
+
+/* 창덕궁 */
+    #article01{width: 100%; overflow: hidden; position: relative;
+      >span{width: 100%; position: absolute; top: 40%; z-index:100; text-align: center; font-size:1.2rem; letter-spacing: 0.3125rem/*5px*/; color:$white;
+        >em{width: 100%; font-size: 5.625rem; color:$white;}
+        }
+      }// #article01
+
+/* 창덕궁소개 */
+  
+#article02{width: 960px; overflow: hidden;
+  >div {height: calc(100% - 64px); float: left; padding: 2rem 0; position: relative;}
+  >.art02_left {width: 60%; background-image: url(../img/section/img.png); background-position: center center; background-repeat: no-repeat; background-size: auto calc(100% - 64px);
+    >span {padding:2px 10px; color:$subColor2; position:absolute; z-index: 100; left: 0; bottom: 2rem; background-color: rgba(0,0,0,.8); display: block; font: normal 0.875rem 'nanumGothic'; line-height: 1.875rem; text-align: center;}
+  }// .art02_left
+    .art02_right{width: 40%;
+      >.art02_right_inbox {width: calc(100% - 80px); height: calc(100% - 80px); background-color: $white; padding: 40px;
+        >.text {width: 100%; height: 80%; font-size: 0.875rem; line-height: 1.5rem; overflow-y: scroll; text-indent: 0.25rem; padding-right: 50%;}
+        }
+      }// .art02_right
+  
+}// #article02
+
+/* 찾아오시는 길 */
+#article03{height: calc(100% - 2rem); padding: 0 2rem;
+      >.subject{margin-top: 2rem;}
+      >.map{width: 100%; height: 320px; margin-bottom: 20px; border: $tableBorder;}
+      >.map_info{width:660px; margin:0 160px;
+            >li{width: 100%; float: left; line-height: 1.25rem}
+            >.info_icon{margin-right: 10px; color: #666; font-size: 1rem;}
+            >.info_txt{margin-right: 50%;margin-bottom: 10px;}
+            >.info_etc {font-size:0.875rem; margin-top: 10px;}
+        }// .map_info
+  }// #article03
+
+/* 관람 시간 및 요금 */
+#article04{height: calc(100% - 2rem);
+  &:after{content:""; clear: both; display: block; width: 0; height: 0;}
+    >.subject{margin-top: 2rem;}
+    >dl{width: 100%; text-indent: 10px; text-align: center; border-top: $tableBorder; border-left: $tableBorder; box-sizing: border-box;
+      dt, dd{height: 2rem; box-sizing: border-box;border-right: $tableBorder; border-bottom: $tableBorder; float: left; line-height:2rem;}
+      >dt{background-color: $mainColor; color:$subColor2;}
+      >dd{background-color: $subColor2; color:$black;}
+      }// dl
+  >.timetable{height:131px; margin-bottom: 20px;
+          >dt, dd{width: 33.3333%;}
+    }// .timetable
+  >.price{height:131px; margin-bottom: 30px;
+          >dt{width: 30%;}
+          >dd{width: 70%; text-align: left; text-indent: 1.25rem;}
+    }// .price
+  
+  
+.art04_btn_more{width: 130px; height: 34px; background-color: $mainColor2; text-align: center; line-height: 2.125rem;; float: right; cursor: pointer; color:$subColor2;}
+.art04_btn_more>i{color:$subColor2; font-size:1.25rem; line-height: 2.125rem; margin-left: 10px;}
+  
+}// #article04
+  
+}// pcFull

@@ -1,27 +1,26 @@
 /*sidenav.js*/
-var sidenav = function(){
-       var navBtn = $('#side_button').find('li'),
-            $body = $('html, body'),
-            firBtn = navBtn.eq(0),
-            secBtn = navBtn.eq(1),
-            thdBtn = navBtn.eq(2),
-            fourBtn = navBtn.eq(3),
-            $art01 = $('#article01Wrap').offset().top,
-            $art02 = $('#article02Wrap').offset().top,
-            $art03 = $('#article03Wrap').offset().top,
-            $art04 = $('#article04Wrap').offset().top;
+function sidenav(){
+
     
-    firBtn.on('click', function(e){
+//nav 버튼생성
+        var art_length = $('#sectionWrap').find('article').length;
+        for(var i = 0; i < art_length; i++){
+            $('#side_button').children('ul').append('<li><a href="#">');
+        };
+    
+    
+//클릭시 이동
+       var navBtn = $('#side_button').find('li'),
+            $body = $('html, body');
+    
+    navBtn.on('click', function(e){
+    var iBtn = $(this).index(),
+        $this= $('section').find('article').eq(iBtn),
+        thisArt = $this.offset().top;
         e.preventDefault();
-        $body.animate({'scrollTop': 0 }, 500)});
-    secBtn.on('click', function(e){
-        e.preventDefault();
-        $body.animate({'scrollTop': $art02 - 80}, 500);});
-    thdBtn.on('click', function(e){
-        e.preventDefault();
-        $body.animate({'scrollTop': $art03 - 80}, 500);});
-    fourBtn.on('click', function(e){
-        e.preventDefault();
-        $body.animate({'scrollTop' : $art04 - 80}, 500);
+        $body.stop().animate({'scrollTop': thisArt - 80 }, 500);
     });
+var nav_h = $('#side_button').height;
+  $('#side_button').css({'top':'50%'}).css({'top': "-=nav_hpx"});
+    
 };
