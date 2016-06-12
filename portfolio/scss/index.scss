@@ -18,14 +18,15 @@ small{font-size: 0.75rem; color:$subColor;}
 #container{width: 100%; height: auto; overflow: hidden;}
 #header{width: 100%; height: 40px; padding: 10px 0; background-color: $white; position: absolute; bottom: 0; left: 0; z-index: 200;}
 #section{width: 100%; height: auto;
-    >article{width: 100%; height: 100vh;}
+    >article{width: 100%; height: calc(100vh - 60px);}
     }// #section
 #footer{width: 100%; height: 80px; background-color: $black; padding: 20px 0;}
 
 #header{
     >div{
         >nav{width: 100%; height: 100%;
-            >h1{width: 300px; height: 100%; float: left;
+            >h1{height: 100%; float: left;
+                >a{padding: 0 10px; font-size: 3rem; font-family: 'Patrick Hand', cursive; color:$black; line-height: 40px; font-weight: bold;}
             }// h1
             >ul{width: auto; height: 100%; float: right;
                 >li{width: auto; height: 100%; margin-right: 4px; float: left;
@@ -41,17 +42,17 @@ small{font-size: 0.75rem; color:$subColor;}
 } // #header
 
 /* ---------- 맨 위 ---------- */
-    .main{background-size: 100vw;width: 100vw; height: 100vh;  background-image: url(../img/mainbg.jpg); background-repeat: no-repeat; position: fixed; top: 0; left: 0; z-index: -100;
+    .main{background-size: 100vw; width: 100vw; height: 100vh;  background-image: url(../img/mainbg.jpg); background-repeat: no-repeat; position: fixed; top: 0; left: 0; z-index: -100;
     }// .main
 
 /* ---------- me ---------- */
     .me{position: relative;
-        >span{width: 100%; font-size: 8rem; text-align: center; font-family: 'Patrick Hand', cursive; color:$black;
+        >span{width: 100%; font-size: 8rem; text-align: center; font-family: 'Patrick Hand', cursive; color:$black; letter-spacing: 0.5rem; text-shadow: 10px 10px $mainColor;
         display: block; position: absolute; top:30%;
         }
         >ul{float: right; width: 200px; height: auto; padding: 10px 20px;
             text-align: center; background-color: rgba($black, 0.9);
-        position: absolute; bottom: calc(50% - 80px); right: calc(50% - 100px);
+        position: absolute; bottom: calc(50% - 100px); right: calc(50% - 100px);
             transition: all 0.3s;
             &:hover{background-color: #000;}
         >li{width: 100%; color:$white;}
@@ -59,7 +60,7 @@ small{font-size: 0.75rem; color:$subColor;}
     }
     
 /* ---------- 이력서 ---------- */
-    .resume{
+    .resume{padding-top: 60px;
         .m_section{
             >ul{width: 60%; margin-left: 20%;
                 >li{width: 100%; height: auto;}
