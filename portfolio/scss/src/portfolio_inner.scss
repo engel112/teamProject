@@ -1,0 +1,29 @@
+// portfolio_inner.sass
+html, body{position: relative; height: 100%;}
+/* 공통 */
+.w960{width: 93.75vw; height: auto; margin: 0 auto;}
+.m_title, .m_section{height: 100%; float: left;}
+.m_title{width: 35%; background-color: $mainColor;
+    >strong{width: 100%; height: auto; color:$black; font-weight: bold; font-size: 4rem; text-align: center; display: block; font-family: 'Patrick Hand', cursive;}
+}
+.m_section{width: 65%; background-color: $white;}
+.more>a{background-color: $black; color:$white; width: 50px; display: block; padding: 0.5rem; text-align: center; float: right;}
+a{width: auto; height: 100%; display: block;}
+a:hover{color:$mainColor;}
+small{font-size: 0.75rem; color:$subColor;}
+
+/* 본문 */
+#container{width: 100%; height: auto; overflow: hidden;}
+#header{width: 100%; height: 40px; padding: 10px 0; background-color: $white; position: fixed; top: 0; left: 0; z-index: 200;}
+#section{width: 100%; height: auto;
+    >article{width: 100%; height: calc(100vh - 60px);}
+    }// #section
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+
+.pftop{background-color:#fac;}
+.nav{background-color:#0ac;}
+.sketch{background-color:#ffc;}
+.mockup{background-color:#0af;}
+.codding{background-color:#daa;}
+.link{background-color:#afa;}

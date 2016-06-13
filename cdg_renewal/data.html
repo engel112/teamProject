@@ -25,6 +25,7 @@
     <script src="./js/nav.js"></script>
     <script src="./js/sidenav.js"></script>
     <script src="./js/hoverdiv.js"></script>
+    <script src="./js/btnchange.js"></script>
     
 
     <title>창덕궁 - 세계문화유산</title>
@@ -36,14 +37,17 @@
           nav();
           sidenav();
           hoverdiv();         
+          btnchange($('.btn_box'), $('.table_wrap'));
 
           
 
 //발간자료 높이맞추기
           var guide_h = $('#article03_1').height(),
-              download_h = $('#article03_2');
+              download_h = $('#article03_2'),
+              abox = download_h.find('a'),
+              abox_h = abox.height();
           download_h.css({'height':guide_h});
-
+          abox.css({'margin-top':(guide_h / 2) - (abox_h / 2) - 50});
         });
           
     </script>
@@ -59,14 +63,14 @@
             <ul>
                 <li><a href="story.html" target="_self">창덕궁 이야기</a></li>
                 <li><a href="info.html" target="_self">관람 안내</a></li>
-                <li><a href="#">관람 예약</a></li>
-                <li><a href="#">참여 공간</a></li>
+                <li><a href="reservation.html" target="_self">관람 예약</a></li>
+                <li><a href="community.html" target="_self">참여 공간</a></li>
                 <li><a href="data.html" target="_self">자료실</a></li>
             </ul>
         </nav>
             <div id="menu"><a href="#" class="fa fa-bars" aria-hidden="true"><span>메뉴버튼</span></a></div>
         </header>
-            <!--클릭시 나오는 메뉴-->
+<!--클릭시 나오는 메뉴-->
             <div id="submenuWrap">
                <div id="submenu">
                 <dl>
@@ -90,29 +94,29 @@
                 <dl>
                    <dt>관람 예약</dt>
                     <dd><span><!--구분바--></span></dd>
-                    <dd><a href="#">후원관람예약</a></dd>
-                    <dd><a href="#">청소년 단체관람 신청</a></dd>
-                    <dd><a href="#">장소사용 및 촬영허가</a></dd>
-                    <dd><a href="#">청소년 문화학교</a></dd>
-                    <dd><a href="#">달빛기행</a></dd>
+                    <dd><a href="reservation.html">후원관람예약</a></dd>
+                    <dd><a href="reservation.html">청소년 단체관람 신청</a></dd>
+                    <dd><a href="reservation.html">장소사용 및 촬영허가</a></dd>
+                    <dd><a href="reservation.html">청소년 문화학교</a></dd>
+                    <dd><a href="reservation.html">달빛기행</a></dd>
                 </dl>
                 <dl>
                    <dt>참여 공간</dt>
                     <dd><span><!--구분바--></span></dd>
-                    <dd><a href="#">공지사항</a></dd>
-                    <dd><a href="#">자주묻는 질문</a></dd>
-                    <dd><a href="#">교육행사 이모저모</a></dd>
-                    <dd><a href="#">전자민원</a></dd>
+                    <dd><a href="community.html">공지사항</a></dd>
+                    <dd><a href="community.html">자주묻는 질문</a></dd>
+                    <dd><a href="community.html">교육행사 이모저모</a></dd>
+                    <dd><a href="community.html">전자민원</a></dd>
                 </dl>
                 <dl>
                    <dt>자료실</dt>
                     <dd><span><!--구분바--></span></dd>
-                    <dd><a href="#">궁궐소개</a></dd>
-                    <dd><a href="#">발간자료</a></dd>
-                    <dd><a href="#">사진 및 동영상</a></dd>
-                    <dd><a href="#">행정정보</a></dd>
-                    <dd><a href="#">조직 및 연락처</a></dd>
-                    <dd><a href="#">가이드북 다운로드</a></dd>
+                    <dd><a href="data.html#article01Wrap">궁궐소개</a></dd>
+                    <dd><a href="data.html#article02Wrap">사진 및 동영상</a></dd>
+                    <dd><a href="data.html#article03Wrap">가이드북 다운로드</a></dd>
+                    <dd><a href="data.html#article03Wrap">발간자료</a></dd>
+                    <dd><a href="data.html#article04Wrap">행정정보</a></dd>
+                    <dd><a href="data.html#article05Wrap">조직 및 연락처</a></dd>
                 </dl>
                 </div><!--// #submenu-->
             </div><!--// #submenuWrap-->
@@ -129,7 +133,7 @@
      
 <section id="sectionWrap">
    
-<!--궁궐소개-->
+<!--궁궐소개/유물소개/수목소개-->
     <article id="article01Wrap">
     <div id="article01" class="clearfix">
        <h2>궁궐 소개</h2>
@@ -143,7 +147,9 @@
                 <button class="art01_btn03" name="view_btn3">수목 소개</button>
             </fieldset>
             </form>
-        <table summary="유물소개" class="heritage data_table">
+  <!--궁궐소개-->
+    <section class="table_wrap">
+        <table summary="궁궐소개" class="heritage data_table">
             <caption class="heritage_table">
                 <span class="bullet"><!--문양--></span>궁궐 소개
             </caption>
@@ -199,10 +205,95 @@
         <form action="" method="get" class="search">
           <fieldset>
             <legend>검색</legend>
-            <input type="text" id="search" name ="search" placeholder="검색어" value=""/>
+            <input type="text" id="heri1_search" name ="search" placeholder="검색어" value=""/>
             <button type="button" class="fa fa-search" aria-hidden="true"><!--검색--></button>
           </fieldset>
         </form>
+      </section>
+
+<!--유물소개-->
+    <section class="table_wrap table_hide">
+        <table summary="유물소개" class="heritage data_table">
+            <caption class="heritage_table">
+                <span class="bullet"><!--문양--></span>유물 소개
+            </caption>
+          <thead>
+            <tr>
+                <th>번호</th>
+                <th>제목</th>
+            </tr>
+          </thead>
+          <tbody>
+                <tr>
+                    <td>3</td>
+                    <td><a href="#">국가 지정 문화재 현황 - 2012.3.2</a></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td><a href="#">국가 지정 문화재 현황</a></td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td><a href="#">국가지정문화재 현황-2012.8.16</a></td>
+                </tr>
+          </tbody>                    
+        </table>
+        <form action="" method="get" class="search">
+          <fieldset>
+            <legend>검색</legend>
+            <input type="text" id="heri2_search" name ="search" placeholder="검색어" value="" />
+            <button type="button" class="fa fa-search" aria-hidden="true"><!--검색--></button>
+          </fieldset>
+        </form>
+    </section>
+        
+<!--수목소개-->
+      <section class="table_wrap table_hide">
+         <table summary="수목소개" class="heritage data_table">
+            <caption class="heritage_table">
+                <span class="bullet"><!--문양--></span>수목 소개
+            </caption>
+          <thead>
+            <tr>
+                <th>번호</th>
+                <th>제목</th>
+            </tr>
+          </thead>
+          <tbody>
+                <tr>
+                    <td>6</td>
+                    <td><a href="#">창덕궁 나무 그리고 봄 (1)</a></td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td><a href="#">창덕궁 나무 그리고 봄 (2)</a></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td><a href="#">창덕궁 나무 그리고 봄 (3)</a></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td><a href="#">창덕궁 나무 그리고 봄 (4)</a></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td><a href="#">창덕궁 나무 그리고 봄 (5)</a></td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td><a href="#">창덕궁 나무 그리고 가을 (1)</a></td>
+                </tr>
+          </tbody>                    
+        </table>
+        <form action="" method="get" class="search">
+          <fieldset>
+            <legend>검색</legend>
+            <input type="text" id="heri3_search" name ="search" placeholder="검색어" value=""/>
+            <button type="button" class="fa fa-search" aria-hidden="true"><!--검색--></button>
+          </fieldset>
+        </form>
+        </section>
     </div><!--// #article01-->
     </article>
             

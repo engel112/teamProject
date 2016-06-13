@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>여행스케치 :: </title>
+    <!--[if lte IE 9]>
+        <script src="./js/dist/html5shiv.min.js"></script>
+        <script src="./js/dist/ie9.min.js"></script>
+        <script src="./js/dist/PIE.js"></script>
+        <script src="./js/dist/responsive.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="./css/lib/reset.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="./css/reservation.css" />
+    <script src="./js/jquery/jquery-1.12.3.min.js"></script>
+    <script src="./js/jquery/jquery-migrate-1.3.0.min.js"></script>
+    <script src="./js/jquery/jquery-ui.min.js"></script>
+    <style></style>
+    <script>
+      $(document).ready(function(){
+          var $info_btn = $('#timetable').find('li');
+              $info_btn.on('click', function(e){
+                e.preventDefault();
+                var $this = $(this),
+                    index_i = $(this).index();
+                    $this.addClass('select_menu').siblings().removeClass('select_menu');
+                
+                var $menu = $('#timetableWrap').children('div');
+                  $menu.eq(index_i).css({'display':'block'}).siblings().css({'display':'none'});
+          });
+
+      });
+    </script>
+    <title>여행스케치 :: </title>
+</head>
+<body>
+<!--   헤더 -->
+    <header id="header">
+        <div id="h_top">
+            <div id="h_topWrap" class="me_link"><a href="#"><h2>4월벚꽃추천여행지</h2></a></div>
+        </div><!--// #h_top-->
+        <div id="h_menu">
+        <div id="h_menuWrap">
+            <h3>좌측메뉴</h3>
+            <ul id="h_menu_left" class="me_link">
+                <li class="h_menu01"><a href="#" ><i class="fa fa-home" aria-hidden="true"></i>메인으로</a></li>
+                <li class="h_menu_bar"><span><!--메뉴구분바--></span></li>
+                <li class="h_menu02"><a href="#"><i class="fa fa-comments" aria-hidden="true"></i>커뮤니티</a></li>
+                <li class="h_menu_bar"><span><!--메뉴구분바--></span></li>
+                <li class="h_menu03"><a href="#"><i class="fa fa-camera-retro" aria-hidden="true"></i>기획전모음</a></li>
+            </ul>
+            <h3>우측메뉴</h3>
+            <ul id="h_menu_right" class="me_link">
+                <li class="h_menu04"><a href="#">로그인</a></li>
+                <li class="h_menu_bar"><span><!--메뉴구분바--></span></li>
+                <li class="h_menu05"><a href="#">회원가입</a></li>
+                <li class="h_menu_bar"><span><!--메뉴구분바--></span></li>
+                <li class="h_menu06"><a href="#">예약결제</a></li>
+                <li class="h_menu_bar"><span><!--메뉴구분바--></span></li>
+                <li class="h_menu07 lastbox"><a href="#">고객센터</a></li>
+            </ul>
+        </div><!--// #h_menuWrap-->
+        </div><!--// #h_menu-->
+        <div id="gnb">
+           <h2>메인메뉴</h2>
+           <div id="gnbWrap">
+            <h1 id="logo" class="me_link"><a href="#" title="여행스케치"></a></h1>
+            <ul id="gnb_menu" class="me_link">
+                <li class="menu_01"><a href="#" title="지자체지원">지자체지원</a></li>
+                <li class="menu_02"><a href="#" title="시즌여행">시즌여행</a></li>
+                <li class="menu_03"><a href="#" title="버스여행">버스여행</a></li>
+                <li class="menu_04"><a href="#" title="기차여행">기차여행</a></li>
+                <li class="menu_05"><a href="#" title="섬여행">섬여행</a></li>
+                <li class="menu_06"><a href="#" title="지방출발">지방출발</a></li>
+                <li class="menu_07"><a href="#" title="제주도여행"><i class="fa fa-heart" aria-hidden="true"></i>제주도여행</a></li>
+            </ul>        
+            </div><!--// #gnbWrap-->
+            </div><!--// #gnb-->
+        </header><!--// #header-->
+<!--    본문   -->
+<section id="sub_main">
+   <article id="schedule">
+      <div class="sch_title"><span>YB01</span>양양 주전골 트레킹과 낙산 바다 산책 &amp; 속초 별미여행 (1박 2일)</div>
+       <ul class="sch_icon">
+           <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a><!--즐겨찾기--></li>
+           <li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a><!--문의--></li>
+           <li><a href="#"><i class="fa fa-print" aria-hidden="true"></i></a><!--인쇄--></li>
+       </ul>
+       <div id="sch_pic">
+           <div>대표그림</div>
+           <ul class="img">
+               <li>그림1</li>
+               <li>그림2</li>
+               <li>그림3</li>
+           </ul>
+       </div>
+        <form action="" method="get" id="sch_form1">
+            <fieldset class="schedule_table">
+                <legend>여행설명</legend>
+                <dl>
+                    <dt>출발일</dt>
+                    <dd>2016.04.14(수)</dd>
+                    <dt>도착일</dt>
+                    <dd>2016.04.15(수)</dd>
+                    <dt>탑승지</dt>
+                    <dd>2016.04.11(수)</dd>
+                    <dt><label for="item">가격</label></dt>
+                    <dd>
+                        <select name="item" id="item">
+                            <option>상품 구성을 선택해주세요. (ex.모텔급/2인 1실)</option>
+                            <option value="1">1명</option>
+                            <option value="2">2명</option>
+                            <option value="3">3명</option>
+                            <option value="4">4명</option>
+                            <option value="5">5명</option>
+                            <option value="6">6명</option>
+                            <option value="7">7명</option>
+                            <option value="8">8명</option>
+                            <option value="9">9명</option>
+                            <option value="10">10명</option>
+                        </select>
+                    </dd>
+                    <dt><label for="adult">인원</label></dt>
+                    <dd>
+                        성인
+                        <select name="adult" id="adult">
+                            <option>1명</option>
+                            <option>2명</option>
+                            <option>3명</option>
+                            <option>4명</option>
+                            <option>5명</option>
+                            <option>6명</option>
+                            <option>7명</option>
+                            <option>8명</option>
+                            <option>9명</option>
+                            <option>10명</option>
+                        </select>
+                        소인
+                        <select name="child" id="child">
+                            <option>1명</option>
+                            <option>2명</option>
+                            <option>3명</option>
+                            <option>4명</option>
+                            <option>5명</option>
+                            <option>6명</option>
+                            <option>7명</option>
+                            <option>8명</option>
+                            <option>9명</option>
+                            <option>10명</option>
+                        </select>
+                    </dd>
+                    <dt>포함내역</dt>
+                    <dd>왕복교통비, 가이드, 차량보험, 도로비, 봉사료</dd>
+                    <dt>준비물</dt>
+                    <dd>편한 복장, 편한 신발, 카메라, 간식 등</dd>
+                    <dt>적립포인트</dt>
+                    <dd><strong class="red">3% 적립</strong></dd>
+                </dl>
+            </fieldset>
+            <fieldset class="res_btn">
+                <button type="submit" id="ok" name="ok">예약하기</button>
+                <button type="button" id="table_go" name="table_go">일정표</button>
+                <button type="button" id="qna_go" name="qna_go">문의하기</button>
+            </fieldset>
+        </form>
+   </article><!--// #schedule-->
+   
+   <article id="cal">
+      <div id="calWrap">
+       <span class="subtitle"><strong class="green">출발일</strong> 선택하기</span>
+       <div class="circle_box">
+          <ul class="circle">
+           <li><span class="ok_circle"><!--원모양--></span>출발확정</li>
+           <li><span class="rsv_circle"><!--원모양--></span>예약가능</li>
+           <li><span class="fin_circle"><!--원모양--></span>예약마감</li>
+           </ul>
+       </div>
+       <table summary="4월">
+           <caption>2016.04</caption>
+           <thead>
+               <tr>
+                   <th>일</th>
+                   <th>월</th>
+                   <th>화</th>
+                   <th>수</th>
+                   <th>목</th>
+                   <th>금</th>
+                   <th>토</th>
+               </tr>
+           </thead>
+           <tbody>
+               <tr>
+                   <td></td><td></td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td>
+               </tr>
+               <tr>
+                   <td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td>
+               </tr>
+               <tr>
+                   <td>13</td><td>14</td><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td>
+               </tr>
+               <tr>
+                   <td>20</td><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td>
+               </tr>
+               <tr>
+                   <td>27</td><td>28</td><td>29</td><td>30</td><td>31</td><td></td><td></td>
+               </tr>
+           </tbody>
+       </table>
+       <table summary="5월">
+           <caption>2016.05</caption>
+           <thead>
+               <tr>
+                   <th>일</th><th>월</th><th>화</th><th>수</th><th>목</th><th>금</th><th>토</th>
+               </tr>
+           </thead>
+           <tbody>
+               <tr>
+                   <td></td><td></td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td>
+               </tr>
+               <tr>
+                   <td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td>
+               </tr>
+               <tr>
+                   <td>13</td><td>14</td><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td>
+               </tr>
+               <tr>
+                   <td>20</td><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td>
+               </tr>
+               <tr>
+                   <td>27</td><td>28</td><td>29</td><td>30</td><td>31</td><td></td><td></td>
+               </tr>
+           </tbody>
+       </table>
+       <table summary="6월">
+           <caption>2016.06</caption>
+           <thead>
+               <tr>
+                   <th>일</th><th>월</th><th>화</th><th>수</th><th>목</th><th>금</th><th>토</th>
+               </tr>
+           </thead>
+           <tbody>
+               <tr>
+                   <td></td><td></td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td>
+               </tr>
+               <tr>
+                   <td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td>
+               </tr>
+               <tr>
+                   <td>13</td><td>14</td><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td>
+               </tr>
+               <tr>
+                   <td>20</td><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td>
+               </tr>
+               <tr>
+                   <td>27</td><td>28</td><td>29</td><td>30</td><td>31</td><td></td><td></td>
+               </tr>
+           </tbody>
+       </table>
+       <span class="cap">* 예약 전 유의사항 및 취소규정 필히 확인 부탁드립니다.</span>
+       <form action="" method="get">
+           <fieldset>
+               <legend>예약 진행</legend>
+               <button type="submit" name="reservation"><i class="fa fa-check-square-o" aria-hidden="true"></i>예약 진행</button>
+           </fieldset>
+       </form>
+       </div><!--// #calWrap-->
+   </article><!--// #cal-->
+   
+   <article id="timetable">
+       <img src="./img/article/img_kto.gif" alt="대한민국 구석구석 공식여행사" />       
+      <ul>
+       <li class="select_menu"><a href="#info_t1">여행일정표</a></li>
+       <li><a href="#info_t2">유의사항</a></li>
+       <li><a href="#info_t3">여행지 풍경</a></li>
+       <li><a href="#info_t4">취소 및 기타사항</a></li>
+      </ul>
+     <div id="timetableWrap">
+         <div id="info_t1" class="info_table1">
+           <table class="sch_table">
+               <caption>1일차</caption>
+               <thead>
+                   <tr>
+                       <th>지역</th>
+                       <th>교통</th>
+                       <th>세부일정</th>
+                       <th>비고</th>
+                   </tr>
+               </thead>
+               <tbody>
+                   <tr>
+                       <td>경상도</td>
+                       <td>관광버스</td>
+                       <td>
+                       <dl>
+                           <dt>06:30</dt>
+                           <dd>서울 시청역 8번 출구 앞 출발 (가이드 ‘STAFF’ 신분증 착용하고 대기)</dd>
+                           <dt>07:00</dt>
+                           <dd><strong>서울 교대역 9번 출구 앞 경유 (가이드 ‘STAFF’ 신분증 착용하고 대기)</strong>
+                           <br /><small>
+                            -출발 하루 전 탑승차량 및 가이드의 연락처를 문자로 보내드립니다.
+
+                           <br />
+            -버스탑승시 차량 문에 부착된 좌석표대로 앉아주세요. (좌석지정 안됨)</small>
+                           </dd>
+                           <dt>12:00</dt>
+                       </dl>
+                       </td>
+                       <td></td>
+                   </tr>
+               </tbody>
+           </table>
+           <table class="sch_table">
+               <caption>2일차</caption>
+               <thead>
+                   <tr>
+                       <th>지역</th>
+                       <th>교통</th>
+                       <th>세부일정</th>
+                       <th>비고</th>
+                   </tr>
+               </thead>
+               <tbody>
+                   <tr>
+                       <td>경상도</td>
+                       <td>관광버스</td>
+                       <td>
+                       <dl>
+                           <dt>06:30</dt>
+                           <dd>서울 시청역 8번 출구 앞 출발 (가이드 ‘STAFF’ 신분증 착용하고 대기)</dd>
+                           <dt>07:00</dt>
+                           <dd><strong>서울 교대역 9번 출구 앞 경유 (가이드 ‘STAFF’ 신분증 착용하고 대기)</strong>
+                           <br />
+                            -출발 하루 전 탑승차량 및 가이드의 연락처를 문자로 보내드립니다.
+                           <br />
+            -버스탑승시 차량 문에 부착된 좌석표대로 앉아주세요. (좌석지정 안됨)
+                           </dd>
+                           <dt>12:00</dt>
+                       </dl>
+                       </td>
+                       <td>-</td>
+                   </tr>
+               </tbody>
+           </table>
+        
+        </div>
+         <div id="info_t2" class="info_table2">
+             info_table2
+         </div>
+         <div id="info_t3" class="info_table3">
+             info_table3
+         </div>
+         <div id="info_t4" class="info_table4">
+             info_table4
+         </div>
+      </div>
+  
+   </article><!--// #timetable-->
+   
+      <article id="qna">
+       <span class="subtitle"><strong class="green">문의</strong> 하기</span>
+       <table summary="문의하기" class="qna_table">
+           <caption>문의하기</caption>
+           <thead>
+               <tr>
+                   <th>번호</th>
+                   <th>제목</th>
+                   <th>작성</th>
+                   <th>작성일</th>
+               </tr>
+           </thead>
+           <tbody>
+               <tr>
+                   <td>1</td>
+                   <td>test</td>
+                   <td>test</td>
+                   <td>16.04.02</td>
+               </tr>
+           </tbody>
+       </table>
+   </article><!--// #qna-->
+   
+   <article id="fin">
+       <span class="subtitle">이 여행을 본 고객이 많이 보신<strong class="red"> 다른 상품</strong></span>
+       <ul>
+           <li><a href="#"><span>영동 당일치기<br /><strong class="price">19,900원</strong></span></a></li>
+           <li><a href="#"><span>영동 당일치기<br /><strong class="price">19,900원</strong></span></a></li>
+           <li><a href="#"><span>영동 당일치기<br /><strong class="price">19,900원</strong></span></a></li>
+           <li><a href="#"><span>영동 당일치기<br /><strong class="price">19,900원</strong></span></a></li>
+       </ul>
+   </article>
+</section>
+
+<!--    푸터   -->
+<section id="footer">
+        <h3>회사정보</h3>
+    <div id="ftWrapBar">
+        <div id="ftBar">
+            <ul id="ftmenu">
+                <li class="ftmenu_01"><a href="#">회사소개</a></li>
+                <li class="ftmenu_bar"><span><!--구분바--></span></li>
+                <li class="ftmenu_02"><a href="#">찾아오시는길</a></li>
+                <li class="ftmenu_bar"><span><!--구분바--></span></li>
+                <li class="ftmenu_03"><a href="#">출발장소</a></li>
+                <li class="ftmenu_bar"><span><!--구분바--></span></li>
+                <li class="ftmenu_04"><a href="#">여행약관</a></li>
+                <li class="ftmenu_bar"><span><!--구분바--></span></li>
+                <li class="ftmenu_05"><a href="#">개인정보취급방침</a></li>
+                <li class="ftmenu_bar"><span><!--구분바--></span></li>
+                <li class="ftmenu_06 lastbox"><a href="#">이용약관</a></li>
+            </ul>
+            <span><a href="#">사업자정보확인</a></span>
+        </div>
+        </div><!--// #ftWrapBar-->
+            <div id="ftFooterWrap">
+                <ul id="ft_footer">
+                    <li class="ft_add">
+                    <address>서울특별시 용산구 원효로 259-1 (원효로1가,화일빌딩4층) <strong>(주)여행스케치여행사</strong><br />
+대표전화 : (02)701-2506 , 팩스번호 : (02)701-2508 , E-mail : tourno1@toursketch.co.kr , 대표이사 : 박영규<br />
+사업자등록번호 : 106-86-83583 , 법인등록번호 : 110111-4760636 , 통신판매업신고 : 제 2012-서울용산-0042호<br />
+                        개인정보책임담당자 : 지근종</address>
+                    </li>
+                    <li class="copy">
+                    Copyrightⓒ2005-2010 (주)여행스케치여행사. All rights Reserved.
+                    </li>
+                </ul>
+                <ul id="ft_sns">
+                    <li class="blog"><a href="http://blog.naver.com/toursketch__" target="_blank" title="네이버 블로그"><span>네이버 블로그</span></a></li>
+                    <li class="kakao"><a href="http://www.toursketch.co.kr/comty01.html?bmode=read&bid=notice&id_no=108974&l=1" target="_blank" title="카카오톡"><span>카카오톡</span></a></li>
+                    <li class="kas"><a href="https://story.kakao.com/ch/toursketch" target="_blank" title="카카오스토리"><span>카카오스토리</span></a></li>
+                </ul>
+            </div>
+    </section><!--// #footer-->
+</body>
+</html>

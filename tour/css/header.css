@@ -1,0 +1,37 @@
+/* header.css */
+#h_menuWrap>ul li.lastbox{margin-right: 0; border-right: 0;}
+
+/* ------------------------- #header --------------------------------------- */
+
+    #header{width: 100%; height: 148px; background-color:#cad;}
+    #header>div>div{width: 900px; margin: 0 auto; padding: 0 40px;}
+        #h_top{width: 100%; height: 60px; background-color: #fff;}
+            #h_top>#h_topWrap{width: 960px; height: 100%; }
+            #h_top>#h_topWrap>a{background-size: 100%; background-position: center bottom; background-repeat: no-repeat;}
+        #h_menu{width: 100%; height: 36px; background-color: #ececec;}
+            #h_menuWrap>ul{width: 100%; height: 16px; padding: 10px 0;}
+            #h_menuWrap>#h_menu_left {width: 242px; float: left; }
+            #h_menuWrap>#h_menu_right{width: 236px; float: right;}
+            #h_menuWrap .h_menu_bar{width: 1px; height: 100%; margin: 0 10px;}
+                .h_menu_bar>span{width: 100%; height: 100%; display: block; border-right: 1px solid #666;}
+            #h_menuWrap>ul>li{height: 100%; float: left;}
+            #h_menuWrap>ul>li>a{font-size: 0.85rem; letter-spacing: -1px; line-height: 1rem;}
+#h_menu i{color:#666; margin-right: 4px;}
+
+
+        #gnb{width: 100%; height: 52px; background-color: #090;}
+            #gnbWrap{width: 100%; height: 100%;}
+                h1{width: 152px; height: 100%; float: left;}
+                h1>a{background-image: url(../img/header/logo.png); background-size: 152px; display: block; background-position: center center;}
+            #gnbWrap>ul{width: 748px; height: 100%; float: right;}
+                #gnbWrap>ul>li{height: 100%; float: left; margin-right: 1px; font-size:1.12rem;}
+                #gnbWrap>ul>li>a{color:#fff; width: 100%; height: 100%; display: block; line-height: 3.25rem; text-align: center;}
+                #gnbWrap>ul>.menu_01{width: 109px;}
+                #gnbWrap>ul>.menu_02{width: 108px;}
+                #gnbWrap>ul>.menu_03{width: 104px;}
+                #gnbWrap>ul>.menu_04{width: 104px;}
+                #gnbWrap>ul>.menu_05{width: 90px;}
+                #gnbWrap>ul>.menu_06{width: 120px;}
+                #gnbWrap>ul>.menu_07{width: 106px;}
+                #gnbWrap>ul>.menu_07 i{color:#fff;}
+

@@ -1,0 +1,47 @@
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-logo_1_hanguk {
+    width: 64px;
+    height: 60px;
+    background-position: -5px -5px;
+}
+
+.sprite-logo_2_inchoen {
+    width: 64px;
+    height: 60px;
+    background-position: -79px -5px;
+}
+
+.sprite-logo_3_jeonra {
+    width: 64px;
+    height: 60px;
+    background-position: -153px -5px;
+}
+
+.sprite-logo_4_chungbuk {
+    width: 64px;
+    height: 60px;
+    background-position: -227px -5px;
+}
+
+.sprite-logo_5_kb {
+    width: 64px;
+    height: 60px;
+    background-position: -301px -5px;
+}
+
+.sprite-logo_6_keb {
+    width: 64px;
+    height: 60px;
+    background-position: -375px -5px;
+}
+
+.sprite-logo_7_samsung {
+    width: 64px;
+    height: 60px;
+    background-position: -449px -5px;
+}

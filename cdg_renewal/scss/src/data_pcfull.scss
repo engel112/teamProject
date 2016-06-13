@@ -49,18 +49,22 @@ section{width: 100%; height: auto; padding-top: 80px;
           button{background-color: transparent; width: 108px; height: 40px; color: $black; line-height: 2.5rem; background-image: url(../img/section/viewbtn.png); background-repeat: no-repeat; cursor: pointer;  float: left; margin-right: 10px;
               &:last-of-type{margin-right: 0;}
               &:hover{color: $subColor2; font-weight: bold; background-image: url(../img/section/viewbtn_on.png);}
+            &.addColor{color: $subColor2; font-weight: bold; background-image: url(../img/section/viewbtn_on.png);}
           }
       }// .btn_box
-      >.data_table{@include tableSetting($th_w:'auto', $td_w:'auto');
-        td:first-of-type{width: 10%;}
-        td:last-of-type{text-indent: 1rem; text-align: left;}
-        margin-bottom: 10px;
-      }// .data_table
-      >.search{float: right; width: auto; height: auto;
-        input,button{float: left; height: 1.5rem;}
-        input{text-indent: 6px; line-height: 1.5rem; border: $tableBorder; border-right: 0; box-sizing: border-box;}
-        button{width: 1.5rem; background-color: $mainColor2; color:$subColor2;}
-      }
+      >.table_wrap{width: 100%; height: auto; display: block; padding: 0;
+        &.table_hide{display: none;}
+        >.data_table{@include tableSetting($th_w:'auto', $td_w:'auto');
+          td:first-of-type{width: 10%;}
+          td:last-of-type{text-indent: 1rem; text-align: left;}
+          margin-bottom: 10px;
+        }// .data_table
+        >.search{float: right; width: auto; height: auto;
+          input,button{float: left; height: 1.5rem;}
+          input{text-indent: 6px; line-height: 1.5rem; border: $tableBorder; border-right: 0; box-sizing: border-box;}
+          button{width: 1.5rem; background-color: $mainColor2; color:$subColor2;}
+        }
+        }
     }// #article01Wrap
 
   
@@ -144,9 +148,9 @@ $div_h: 80px;
           >a{width: 100%; height: 100%; display: block; line-height: 2rem;
             &:hover{color:$mainColor2; font-weight: bold;}
           }
-      >.nextpage{float: right;}
         }
-      }
+      }// ul
+      >.nextpage{float: right;}
     }
   }// #article05
 

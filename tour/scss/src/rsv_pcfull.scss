@@ -1,0 +1,173 @@
+//rsv_article.scss
+
+
+// pc Full
+@media screen and (min-width:1025px) {
+
+section{width: 100%; height: auto;
+     >article{width: 900px; height: auto; margin: 0 auto; padding: 0 40px;
+         &#schedule{padding: 70px 0;}
+         &#cal{width: 100%; height: auto; background-color: $sub1;
+             >#calWrap{width: 900px;  margin: 0 auto; padding: 60px 40px;}
+         }
+         &#timetable{padding: 60px 0; border-bottom: $div_border;}
+         &#qna{padding: 60px 0; border-bottom: $div_border;}
+         &#fin{padding: 60px 0;}
+    }
+}
+
+/*-------------- 스케쥴 ----------------*/
+#schedule{
+    >.sch_title{width:780px; height: 2rem; font-size: 1.25rem; line-height: 2rem; float: left; margin-bottom: 2rem; letter-spacing: -1px;
+        >span{width: 3.75rem; height: 100%; display: block; color: $white; background-color: $main2color; font-size: 1rem; text-align: center; line-height: 2rem; border-radius: 0.625rem; margin-right: 6px; display: block; float: left;}
+    }// .sch_title  
+    >.sch_icon{width: 114px; height: 2rem; float: right;
+        >li{width: 2rem; height: 100%; background-color: $graybox; border-radius: 0.3725rem; float: left; margin-right: 6px;
+            &:last-child{margin-right: 0;}
+            >a{width: 100%; height: 100%;
+                >i{width: 100%; height: 100%; color:$graybox2; line-height: 2rem; text-align: center; font-size: 1.2rem;}
+            }
+        }
+    }// .sch_icon
+     &::after{content:""; clear: both; display: block;}
+}// #schedule
+
+#sch_pic{width: 448px; height: 390px; float: left;
+    >div{width: 100%; height: 258px; margin-bottom: 14px; border: $img_border; box-sizing: border-box;}
+    >ul{width: 100%; height: 118px;
+        >li{width: 140px; height: 100%; margin-right: 14px; border: $img_border; box-sizing: border-box; float: left;
+            &:last-child{margin-right: 0;}
+        }
+    }
+}// #sch_pic
+
+#sch_form1{width: 410px; float: right;  
+    >.schedule_table{width: 100%; margin-bottom: 18px; border-top: $img_border;
+        >dl{width: 100%; height: 100%; font-size: 0.875rem;
+            >dt,dd{border-bottom: $img_border; height: 2.4rem; text-align: center; line-height: 2.4rem; float: left; }
+            >dt{width: 81px; border-color: $img_border; background-color: $graybox; font-weight: bold;
+                >label{font-weight: bold;}
+            }
+            >dd{width: 328px; background-color: $white;
+                >select{height: 100%; border: $img_border; border-radius: 4px;
+                    &#adult{margin-right: 10px;}
+                }
+            }
+           }
+    }// .schedule_table
+    
+    >.res_btn{width: 100%; height: 50px;
+        >button{height: 100%; text-align: center; line-height: 50px; float: left; cursor: pointer; background-color: $graybox2; color:$white; margin-right: 10px; border-radius: 10px; font-size:1.125rem;
+            &#ok{width: 150px; background-color: $main2color;}
+            &#table_go {width: 120px;}
+            &#qna_go {width: 120px; margin-right: 0;}
+        }
+    }// .res_btn
+}// #sch_form1
+
+
+
+/*-------------- 달력 ----------------*/
+
+#calWrap{
+    >.subtitle{width: 100%;}
+    >.circle_box{width: 100%;  height: 0.875rem; margin-bottom: 3.75rem;
+    .circle{float: right; height: 100%;
+            >li{float: left; font-size: 0.875rem; line-height: 0.875rem; margin-right: 12px;
+                &:last-child{margin-right: 0;}
+                >span{display: block; width: 14px; height: 14px; border-radius: 14px; margin-right: 2px; background-color: $main2color; float: left; margin-top: -2px;
+                &.rsv_circle{background-color: $maincolor;}
+                &.fin_circle{background-color: $sub2;}
+                }
+            }
+        } //.circle
+    }// .circle_box
+    &::after{content:""; clear: both; display: block;}
+}// #cal
+
+#calWrap>table{float: left; width: 292px; height: 248px; text-align: center; background-color: $white; border-collapse: collapse; margin-right: 12px; margin-bottom: 14px;
+    &:last-of-type{margin-right: 0;}
+    >caption{width: 100%;  height: 38px; font-size: 1.5rem; font-weight: bold;}
+    th{background-color: $graybox; height: 30px;}
+    th, td{width: calc(100% / 7); height: calc(100% / 6); border: $img_border;}
+}// table
+
+#calWrap .cap{width: 100%; height: 0.875rem; text-align: right; display: block; font-size: 0.875rem; line-height: 0.875rem; float: left; margin-bottom: 36px;}
+
+#calWrap>form{width: 100%; height: 56px; float: left;
+    button{width: 214px; height: 100%; text-align: center; line-height: 56px; float: left; cursor: pointer; background-color: $main2color; color:$white; border-radius: 10px; font-size:1.25rem; margin-left: calc(50% - 107px);
+        &:hover{font-weight: bolder;}
+        >i{font-size:1.5rem; margin-right: 8px; color: $white; line-height: 56px;}
+    }
+}// form
+
+/*-------------- 일정표 ----------------*/
+#timetable{
+    >img{width: 100%; margin-bottom: 40px;}    
+    >ul{width: 100%; height: 48px;
+        >li{width: 25%; height: 100%; background-color: $graybox2; text-align: center; border: $img_border; border-right: 0; float: left; box-sizing: border-box;
+                &:hover{background-color: $maincolor;}
+//                &:first-child{background-color: $maincolor;}
+                &.select_menu{background-color: $maincolor;}
+            >a{width: 100%; height: 100%; display: block; line-height: 48px;
+                font-weight: bold; color: $white;}
+            }
+        }// ul
+    
+    >div>div{width: calc(100%; - 60px); padding: 30px; border: $img_border;
+        &:nth-of-type(2){display: none;}
+        &:nth-of-type(3){display: none;}
+        &:nth-of-type(4){display: none;}
+        >table{width: 100%; text-align: center;
+            &:first-child{margin-bottom: 30px;}
+            >caption{width: 100%; height: 46px; background-color: $sub1; font-size: 1.125rem; line-height:46px; color: $main2color; font-weight: bold; border-bottom: 1px solid $white;}
+            th,td{border: $img_border; line-height: 1rem; font-size: 0.875rem;}
+            th{height: 38px; background-color: $graybox; font-weight: bold;}
+            td{
+                dt,dd{float: left; margin-bottom: 10px; line-height: 1.2rem;}
+                dt{width: 7%; border-right: 2px solid $graybox; margin-right: 2%;}
+                dd{width: 90%;
+                    >small{font-size:0.8rem; color:$sub2; line-height: 1rem;}}
+            &:nth-of-type(3){text-align: left; width: 74%; padding: 20px;}
+                }
+        }// table
+    }
+}// #timetable
+
+/*-------------- 문의 ----------------*/
+#qna{
+    >.subtitle{width: 100%; height: 1.3rem; margin-bottom: 1.5rem; display: block;}
+    >table{width: 100%;
+        tr:hover{background-color: $sub1;}
+        th,td{height: 28px; line-height: 28px; text-align: center; border: $img_border;}
+        th{background-color: $sub2; color: $white;}
+        td{width: 14%;
+            &:first-of-type{width: 10%;}
+            &:nth-of-type(2){text-align: left; text-indent: 10px; width:62%;}
+            
+        }
+    }// table
+    }// #qna
+
+/*-------------- 추천여행지 ----------------*/
+#fin{
+    >.subtitle{width: 100%; height: 1.3rem; margin-bottom: 1.5rem; display: block;}
+    >ul{width: 100%; height: 206px;
+        >li{width: 210px; height: 100%; margin-right: 20px; float: left; border: $img_border; box-sizing: border-box; background-color: #a88;
+            &:last-child{margin-right: 0;}
+                >a{width: 100%; height: 100%; display: block;
+                    >span{width: calc(100% - 20px); padding: 10px; background-color: $white; font-size: 1rem; line-height: 1.25rem; margin-top: 134px; height: 50px; font-weight: bold;}
+                    .price{color: $main2color; font-weight: bold; font-size: 1.125rem;}
+                }// a
+            &:hover{border-color: $main2color;}
+            }// li
+        }// ul
+    }// #fin
+    
+    
+    
+    
+    
+    
+    
+    }// pcFull

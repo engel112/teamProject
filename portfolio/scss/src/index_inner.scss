@@ -1,0 +1,80 @@
+
+
+// index.sass
+html, body{position: relative; height: 100%;}
+/* 공통 */
+.w960{width: 93.75vw; height: auto; margin: 0 auto;}
+.m_title, .m_section{height: 100%; float: left;}
+.m_title{width: 35%; background-color: $mainColor;
+    >strong{width: 100%; height: auto; color:$black; font-weight: bold; font-size: 4rem; text-align: center; display: block; font-family: 'Patrick Hand', cursive;}
+}
+.m_section{width: 65%; background-color: $white;}
+.more>a{background-color: $black; color:$white; width: 50px; display: block; padding: 0.5rem; text-align: center; float: right;}
+a{width: auto; height: 100%; display: block;}
+a:hover{color:$mainColor;}
+small{font-size: 0.75rem; color:$subColor;}
+
+/* 본문 */
+#container{width: 100%; height: auto; overflow: hidden;}
+#header{width: 100%; height: 40px; padding: 10px 0; background-color: $white; position: absolute; bottom: 0; left: 0; z-index: 200;}
+#section{width: 100%; height: auto;
+    >article{width: 100%; height: calc(100vh - 60px);}
+    }// #section
+
+
+
+
+/* ---------- 맨 위 ---------- */
+    .main{width: 100vw; height: 100vh;  background-image: url(../img/mainbg.jpg); background-repeat: no-repeat; position: fixed; top: 0; left: 0; z-index: -100;
+    }// .main
+
+/* ---------- me ---------- */
+    .me{position: relative;
+        >span{width: 100%; font-size: 8rem; text-align: center; font-family: 'Patrick Hand', cursive; color:$black; letter-spacing: 0.5rem; text-shadow: 10px 10px $mainColor;
+        display: block; position: absolute; top:30%;
+        }
+        >ul{float: right; width: 200px; height: auto; padding: 10px 20px;
+            text-align: center; background-color: rgba($black, 0.9);
+        position: absolute; bottom: calc(50% - 120px); right: calc(50% - 100px);
+            transition: all 0.3s;
+            &:hover{background-color: #000;}
+        >li{width: 100%; color:$white;}
+        }
+    }
+    
+/* ---------- 이력서 ---------- */
+    .resume{padding-top: 60px;
+        .m_section{
+            >ul{width: 60%; margin-left: 20%;
+                >li{width: 100%; height: auto;}
+                >.resume_txt{width: calc(100% - 2rem); padding: 1rem; background-color: #666; transition: all 0.3s; color:$white; margin-bottom: 10px;
+                &:hover{background-color: $black;}
+                }
+            }
+        }// .section
+    } // .resume
+
+/* ---------- 포트폴리오 ---------- */
+
+    .portfolio{
+        >div{width: 50%; height: 100%; float: left; position: relative; background-size: 100%;            
+            >ul{position: absolute; width: 70%; height: auto; background-color: $white; left: 0; bottom: 0; padding: 2rem 15%;
+                >li{float: left; width: 100%; height: auto; padding: 2px 0;
+                }
+            }// ul
+        }// div
+        .port1{background-image: url(../img/mainbg.jpg); transition: all 0.3s;
+        &:hover{background-size: 110%;}}
+        .port2{background-color: #f70;}
+        .pf_title{font-weight: bold; text-align: center; font-size: 1.5rem;}
+        .pf_bar{width: 8%; margin: 0 46%; border-bottom: 3px solid $subColor;}
+    } // .portfolio
+
+/* ---------- 연락처 ---------- */
+    .contact{background-color: #ffa;
+        .m_section>dl{width: 60%; height: auto; padding: 0 20%;
+            >dt, dd{height: auto; padding: 6px 0; float: left; text-indent: 1rem;}
+            >dt{width: 20%; min-width: 110px; background-color: $black; color:$white;}
+            >dd{width: 80%;}
+        }
+} // .conatct

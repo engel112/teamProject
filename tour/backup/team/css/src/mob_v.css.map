@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AACA,2BAA4B;EAAC,YAAY,EAAE,CAAC;EAAE,YAAY,EAAE,CAAC;;AAC7D,iCAAkC;EAAC,YAAY,EAAE,CAAC;;AAClD,oCAAoC;EAAC,gBAAgB,EAAE,GAAG",
+"sources": ["../../scss/src/mob_v.scss"],
+"names": [],
+"file": "mob_v.css"
+}
